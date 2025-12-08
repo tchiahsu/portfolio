@@ -13,7 +13,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 			<Header />
 
 			{/* Main Content */}
-			<main className="bg-pink-500">
+			<main>
 				{children}
 			</main>
 
