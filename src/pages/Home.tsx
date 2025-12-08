@@ -2,6 +2,7 @@ import Introduction from "./Introduction"
 import About from "./About"
 import Work from "./Work"
 import Project from "./Project"
+import Footer from "../components/Footer"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <About />
       <Project />
       <Work />
+      <Footer />
     </div>
   )
 }
