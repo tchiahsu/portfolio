@@ -19,9 +19,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
 			{/* Social Media Links */}
 			<Left />
-
-			{/* Email Address */}
-			{/* <Right /> */}
 		</div>
 	)
 }
