@@ -8,7 +8,7 @@ export default function Header() {
   const [openMenu, setOpenMenu] = useState(false)
 
   return (
-    <header className="sticky top-0 flex justify-between items-center w-full h-[8vh] min-h-20 px-10 bg-white z-50">
+    <header className="fixed top-0 flex justify-between items-center w-full h-[8vh] min-h-20 px-10 bg-white z-50">
       {/* Simple Logo */}
       <button className="flex items-center font-bold tracking-wider cursor-pointer">
         <span className="text-xl">TH</span>
