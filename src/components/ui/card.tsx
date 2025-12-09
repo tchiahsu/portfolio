@@ -13,7 +13,7 @@ const Card = ({ src, title, description, skills }: CardProps) => {
       <img src={src} alt="image not found" className="w-full h-auto object-contain block"/>
 
       {/* Content Layer */}
-      <div className="absolute inset-0 py-8 flex flex-col gap-4 items-start justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out">
+      <div className="absolute inset-0 py-8 flex flex-col gap-4 items-start justify-end bg-gradient-to-t from-black via-black/60 to-transparent opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-400 ease-out">
         {/* Project Title */}
         <h2 className="px-8 text-2xl text-white tracking-wider font-bold">
           {title}
