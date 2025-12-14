@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-5 px-5 md:px-30 lg:px-50">
       <Introduction />
-      <About />
       <Project />
       <Work />
+      <About />
       <Footer />
     </div>
   )

@@ -1,75 +1,127 @@
-import Card from "../components/ui/card";
-import greenTrack from "../assets/projects/microgreens.png";
-import pokeDuel from "../assets/projects/pokeduel.png";
-import spotifyApp from "../assets/projects/spotify.png";
-import adventureGame from "../assets/projects/adventure_game.png";
-import greenTrack2 from "../assets/projects/microgreens2.png";
-import pokeDuel2 from "../assets/projects/pokeduel2.png";
-import spotifyApp2 from "../assets/projects/spotify2.png";
-
-const lProjects = [
-  { src: greenTrack,
-    title: "GreenTrack",
-    description: "It is a web-based application designed for microgreen farms to manage day-to-day operations.",
-    skills: ["Python", "TypeScript", "MySQL", "FastAPI", "React.js"],
-    src2: greenTrack2,
-    about: "This web application is a microgreen order management system tailored to Boston Microgreens’ operations. It provides its users all the functionality needed to manage their daily operations such as: recording restaurant orders, managing product offerings, storing crop growth information, tracking delivery records as well as restaurant information.",
-    github: "https://github.com/tchiahsu/microgreen_app",
-    website: ""
-  },
-  { src: spotifyApp, title: "Spotify App",
-    description: "A web application to visualize personalized Spotify data using the Spotify Web API.",
-    skills: ["TypeScript", "Next.js", "React.js"],
-    src2: spotifyApp2,
-    about: "A personal 'Spotify Wrapped' clone. Sign in with your own Spotify account, then view your top artists, tracks, genres, and listening trends. This project uses OAuth 2.0 + PKCE and calls the Spotify Web API directly from the client. No server is required.",
-    github: "https://github.com/tchiahsu/spotify-wrapped-clone",
-    website: ""
-  }
-]
-
-const rProjects = [
-  { src: pokeDuel, title: "PokeDuel",
-    description: "A full-stack turn-based Pokemon battle game inspired by Nintendo 64's Pokemon Stadium.",
-    skills: ["TypeScript", "React", "Socket.IO", "Node.js", "Express.js"],
-    src2: pokeDuel2,
-    about: "A full-stack turn-based Pokemon battle game inspired by Nintendo 64's Pokemon Stadium. It features real-time 1-on-1 battles, team selection, type advantages, and 2D battle animations. Its designed to deliver a competitive multiplayer experience in the browser.",
-    github: "https://github.com/tchiahsu/pokeduel",
-    website: "https://pokeduel-gbbx.onrender.com/#/"
-  },
-  { src: adventureGame, title: "Adventure Game Engine",
-    description: "An object-oriented game engine that allows players to explore a dynamic world and interact with its environment.",
-    skills: ["Java", "Java Swing", "Maven"],
-    src2: adventureGame,
-    about: "Interactive Adventure Game is an object-oriented game engine that lets players explore a dynamic world, interact with items, solve puzzles, and battle monsters. Built using the Model-View-Controller (MVC) architecture, the project focuses on a clean design, flexibility, and scalability - demonstrating core software engineering principles while being a fun and interactive game.",
-    github: "https://github.com/tchiahsu/interactive-adventure-game",
-    website: ""
-  }
-]
+import spotify from "../assets/projects/spotify.png"
+import pokeball from "../assets/projects/pokeball.png"
+import microgreen from "../assets/projects/microgreens.png"
+import productLens from "../assets/projects/product_lens.png"
+import adventure from "../assets/projects/adventure.png"
 
 export default function Project() {
   return (
-    <div className="flex flex-col gap-10 my-30">
+    <div className="flex flex-col gap-10 my-10">
       {/* Section Title */}
       <div className="flex justify-start text-[#007BFF] text-4xl md:text-6xl font-semibold tracking-tight">
         Projects.
       </div>
-      {/* Project Section Content */}
-      <div className="flex flex-row gap-4 w-full">
 
-        {/* Left Column Project Cards */}
-        <div className="flex flex-col gap-4 flex-1">
-          {lProjects.map((p) => (
-            <Card src={p.src} title={p.title} description={p.description} skills={p.skills} src2={p.src2} about={p.about} gh={p.github} web={p.website} />
-          ))}
+      {/* Section Content */}
+      <div className="grid grid-cols-3 gap-x-5 gap-y-10">
+        
+        {/* Microgreen Project */}
+        <div className="flex flex-col gap-2">
+          <div
+            className="flex justify-center items-center h-[50vh] rounded-lg bg-gradient-to-t from-transparent via-gray-100/80 to-gray-100"
+          >
+            <img src={microgreen} alt="image not found" width="120" height="120"
+              className="hover:-translate-y-2 hover:scale-105 ease-in-out duration-300" />            
+          </div>
+          <ul className="flex flex-row justify-start items-center gap-2 text-[6pt] text-white font-semibold font-mono">
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">Python</li>
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">TypeScript</li>
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">MySQL</li>
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">FastAPI</li>
+          </ul>
+          <div className="hover:underline text-xl font-semibold cursor-pointer">
+            GreenTrack: Microgreen Order Management
+          </div>
+          <div className="text-gray-400 text-sm">
+            It is a web-based application designed for microgreen farms to manage day-to-day operations.
+          </div>
         </div>
 
-        {/* Right Column */}
-        <div className="flex flex-col gap-4 flex-1">
-          {rProjects.map((p) => (
-            <Card src={p.src} title={p.title} description={p.description} skills={p.skills} src2={p.src2} about={p.about} gh={p.github} web={p.website} />
-          ))}
+        {/* Pokemon Project */}
+        <div className="flex flex-col gap-2">
+          <div
+            className="flex justify-center items-center h-[50vh] rounded-lg bg-gradient-to-t from-transparent via-gray-100/80 to-gray-100"
+          >
+            <img src={pokeball} alt="image not found" width="130" height="130"
+              className="hover:-translate-y-2 hover:scale-105 ease-in-out duration-300" />            
+          </div>
+          <ul className="flex flex-row justify-start items-center gap-2 text-[6pt] text-white font-semibold font-mono">
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">TypeScript</li>
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">React</li>
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">Socket.IO</li>
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">Express.js</li>
+          </ul>
+          <div className="hover:underline text-xl font-semibold cursor-pointer">
+            PokeDuel: Pokemon Battle Game
+          </div>
+          <div className="text-gray-400 text-sm">
+            A full-stack turn-based Pokemon battle game inspired by Nintendo 64's Pokemon Stadium.
+          </div>
         </div>
 
+        {/* Spotify Project */}
+        <div className="flex flex-col gap-2">
+          <div
+            className="flex justify-center items-center h-[50vh] rounded-lg bg-gradient-to-t from-transparent via-gray-100/80 to-gray-100"
+          >
+            <img src={spotify} alt="image not found" width="100" height="100"
+              className="hover:-translate-y-2 hover:scale-105 ease-in-out duration-300" />            
+          </div>
+          <ul className="flex flex-row justify-start items-center gap-2 text-[6pt] text-white font-semibold font-mono">
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">TypeScript</li>
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">React.js</li>
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">Next.JS</li>
+          </ul>
+          <div className="hover:underline text-xl font-semibold cursor-pointer">
+            Spotify Profile
+          </div>
+          <div className="text-gray-400 text-sm">
+            A web application to visualize personalized Spotify data using the Spotify Web API.
+          </div>
+        </div>
+
+        {/* Product Lens Project */}
+        <div className="flex flex-col gap-2">
+          <div
+            className="flex justify-center items-center h-[50vh] rounded-lg bg-gradient-to-t from-transparent via-gray-100/80 to-gray-100"
+          >
+            <img src={productLens} alt="image not found" width="160" height="160"
+              className="hover:-translate-y-2 hover:scale-105 ease-in-out duration-300" />            
+          </div>
+          <ul className="flex flex-row justify-start items-center gap-2 text-[6pt] text-white font-semibold font-mono">
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">Gradient AI</li>
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">Python</li>
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">TypeScript</li>
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">React.js</li>
+          </ul>
+          <div className="hover:underline text-xl font-semibold cursor-pointer">
+            Product Lens: Competitor Analysis
+          </div>
+          <div className="text-gray-400 text-sm">
+            A competitor audit tool that cuts through the noise to uncover real competitive threats in real-time.
+          </div>
+        </div>
+
+        {/* Adventure Game Project */}
+        <div className="flex flex-col gap-2">
+          <div
+            className="flex justify-center items-center h-[50vh] rounded-lg bg-gradient-to-t from-transparent via-gray-100/80 to-gray-100"
+          >
+            <img src={adventure} alt="image not found" width="100" height="100"
+              className="hover:-translate-y-2 hover:scale-105 ease-in-out duration-300" />            
+          </div>
+          <ul className="flex flex-row justify-start items-center gap-2 text-[6pt] text-white font-semibold font-mono">
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">Java</li>
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">Java Swing</li>
+            <li className="rounded-full bg-[#007BFF] px-2 py-1">Maven</li>
+          </ul>
+          <div className="hover:underline text-xl font-semibold cursor-pointer">
+            Adventure Game Engine
+          </div>
+          <div className="text-gray-400 text-sm">
+            It is an object-oriented game engine that lets players explore a dynamic world, interact with items, solve puzzles, and battle monsters. 
+          </div>
+        </div>
       </div>
     </div>
   )

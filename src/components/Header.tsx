@@ -17,9 +17,9 @@ export default function Header() {
 
       {/* Header Options */}
       <nav className="hidden md:flex flex-row gap-10 font-mono text-sm">
-        <button className="cursor-pointer hover:text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">About Me</button>
         <button className="cursor-pointer hover:text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">Projects</button>
         <button className="cursor-pointer hover:text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">Work Experience</button>
+        <button className="cursor-pointer hover:text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">About Me</button>
         <button className="border rounded-md px-6 py-2 mx-2 cursor-pointer hover:border-[#007BFF] hover:text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">
           Resume
         </button>
