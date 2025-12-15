@@ -3,7 +3,7 @@ import Card from "../components/ui/card"
 
 export default function Project() {
   return (
-    <div className="flex flex-col gap-10 my-10">
+    <div id="projects" className="scroll-mt-24 flex flex-col gap-10 my-10">
       {/* Section Title */}
       <div className="flex justify-start text-[#007BFF] text-4xl md:text-6xl font-semibold tracking-tight">
         Projects.

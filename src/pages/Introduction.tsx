@@ -1,6 +1,6 @@
 export default function Introduction() {
   return (
-    <div className="flex flex-col justify-center items-start h-screen max-h-200 mt-30 sm:mt-0">
+    <div id="home" className="scroll-mt-24 min-h-screen flex flex-col justify-center items-start">
       <div className="text-[#007BFF] text-xl tracking-wide font-bold md:text-2xl">
         Welcome to my Portfolio
       </div>
