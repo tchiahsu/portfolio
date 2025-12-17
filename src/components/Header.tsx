@@ -2,6 +2,7 @@ import clsx from "clsx";
 import { useState } from "react";
 import { CgMenuRight } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
+import resume from "../hsutai_resume.pdf";
 
 
 export default function Header() {
@@ -10,19 +11,19 @@ export default function Header() {
   return (
     <header className="fixed top-0 flex justify-between items-center w-full h-[8vh] min-h-20 px-10 bg-white z-50">
       {/* Simple Logo */}
-      <button className="flex items-center font-bold tracking-wider cursor-pointer">
+      <a href="#home" className="flex items-center font-bold tracking-wider cursor-pointer">
         <span className="text-xl">TH</span>
         <span className="text-[#007BFF] text-3xl">.</span>
-      </button>
+      </a>
 
       {/* Header Options */}
-      <nav className="hidden md:flex flex-row gap-10 font-mono text-sm">
-        <button className="cursor-pointer hover:text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">Projects</button>
-        <button className="cursor-pointer hover:text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">Work Experience</button>
-        <button className="cursor-pointer hover:text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">About Me</button>
-        <button className="border rounded-md px-6 py-2 mx-2 cursor-pointer hover:border-[#007BFF] hover:text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">
+      <nav className="hidden md:flex flex-row items-center gap-10 font-mono text-sm">
+        <a href="#projects" className="cursor-pointer hover:text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">Projects</a>
+        <a href="#work" className="cursor-pointer hover:text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">Work Experience</a>
+        <a href="#about" className="cursor-pointer hover:text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">About Me</a>
+        <a href={resume} target="_blank" className="border rounded-md px-6 py-2 mx-2 cursor-pointer hover:border-[#007BFF] hover:text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">
           Resume
-        </button>
+        </a>
       </nav>
 
       {/* Mobile Menu */}
@@ -63,21 +64,20 @@ export default function Header() {
           {/* Hamburger Menu Options */}
           {openMenu && (
             <div className="absolute flex flex-col justify-center items-center gap-12 h-full">
-              <button className="font-mono cursor-pointer text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">
-                About Me
-              </button>
-              <button className="font-mono cursor-pointer text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">
+              <a href="#projects"  className="font-mono cursor-pointer text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">
                 Projects
-              </button>
-              <button className="font-mono cursor-pointer text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">
+              </a>
+              <a href="#work"  className="font-mono cursor-pointer text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">
                 Work Experience
-              </button>
+              </a>
+              <a href="#about" className="font-mono cursor-pointer text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">
+                About Me
+              </a>
               <button className="font-mono border rounded-md px-6 py-2 mx-2 cursor-pointer border-[#007BFF] text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">
                 Resume
               </button>
             </div>
           )}
-
         </div>
       </div>
     </header>
