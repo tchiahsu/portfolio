@@ -4,6 +4,8 @@ type ProjectCardProps = {
   title: string;
   description: string;
   skills: string[];
+  github: string;
+  website: string;
 }
 
 const ProjectCard = ({ thumbnail, preview, title, description, skills }: ProjectCardProps) => {
