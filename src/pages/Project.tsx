@@ -11,7 +11,7 @@ export default function Project() {
       </div>
 
       {/* Section Content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-stretch">
         {projectData.map((d) => (
           <Card
             thumbnail={d.thumbnail}
