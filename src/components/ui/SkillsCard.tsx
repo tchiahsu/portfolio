@@ -5,11 +5,17 @@ type SkillsCardProp = {
 
 const SkillsCard = ({ title, skills }: SkillsCardProp) => {
   return (
-    <div className="w-full text-left rounded-xl border border-slate-200 bg-white px-6 py-4 flex flex-col items-center sm:items-start gap-6 hover:border-slate-300 hover:shadow-sm transition">
-      <div className="text-slate-600 font-semibold">{title}</div>
-      <ul className="flex flex-row flex-wrap gap-2">
+    <div className="w-full text-left rounded-2xl border border-slate-200/70 bg-white p-6 flex flex-col gap-4 shadow-sm hover:shadow-md hover:-translate-y-[1px] transition-all">
+      <h3 className="text-lg font-semibold text-slate-800">{title}</h3>
+
+      <ul className="flex flex-wrap gap-2">
         {skills.map((s) => (
-          <li className="bg-[#007bff] text-white font-bold px-2 py-1 rounded-md text-xs">{s}</li>
+          <li
+            key={s}
+            className="rounded-full bg-blue-50 text-blue-700 border border-blue-100 px-3 py-1 text-xs font-medium"
+          >
+            {s}
+          </li>
         ))}
       </ul>
     </div>

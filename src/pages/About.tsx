@@ -57,7 +57,7 @@ export default function About() {
       </div>
 
       {/* Skills */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <div className="flex flex-col gap-4 justify-center">
         {skills.map((s) => (
           <SkillsCard title={s.title} skills={s.skills}/>
         ))}
