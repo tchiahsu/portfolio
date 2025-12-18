@@ -2,7 +2,7 @@ export default function Introduction() {
   return (
     <div id="home" className="scroll-mt-24 my-36 sm:mt-0 sm:min-h-screen flex flex-col justify-center items-start sm:px-20">
       <div className="text-[#007BFF] text-xl tracking-wide font-bold md:text-2xl">
-        Welcome to my Portfolio
+        Hello! My name is
       </div>
       <div className="flex flex-col gap-2">
         <div className="text-gray-400 text-5xl tracking-tight font-bold md:text-6xl lg:text-7xl">

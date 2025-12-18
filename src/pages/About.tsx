@@ -26,22 +26,21 @@ export default function About() {
           {/* Body */}
           <div className="mt-6 space-y-4 text-sm leading-6 text-zinc-600">
             <p>
-              I didn't start out in computer science. I studied Industrial Engineering for undergrad
-              and spent nearly three years working as an operations manager at Boston Microgreens. We
-              used spreadhseets extensivelly to manage data and keep things running. While building and
-              maintaining those spreadsheets, I started realizing how powerful and necessary good software
-              really is, and that's what pushed me to transition into computer science.
+              I studied Industrial Engineering for undergrad and spent nearly three years working as an operations
+              manager at Boston Microgreens. We used spreadhseets extensivelly to manage data and keep things running.
+              While building and maintaining those spreadsheets, I began to realize how powerful good software can be
+              for any businesses operations, and that's what pushed me to transition into computer science.
             </p>
 
             <p>
-              I'm now pursuing a Master's degree in Computer Science, where I combine my engineering mindset
-              and operations experience with software development to build scalable, high-impact solutions.
-              Recently, I finished building a new web application for my former company so they could finally
-              move away from those spreadsheets for good.
+              I'm now pursuing a Master's degree in Computer Science, where I attempt to use software development
+              to build scalable, high-impact solutions to real-world problems. Recently, I finished building a new
+              web application to manage order and planting data for my former company so they could finally move away
+              from those spreadsheets for good.
             </p>
             
             <p>
-              Lately, I've also been exploring AI and machine learning. I build a competitor-analysis tool using
+              Lately, I've also started exploring AI and machine learning. I built a competitor-analysis tool using
               DigitalOcean's Gradient AI with multiple agentic workflows to analyze market strategy and pricing.
               Currently, I'm working on a financial insights application that uses Gemeni AI to generate deeper
               insights from personal financial data.
