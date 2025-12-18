@@ -1,16 +1,18 @@
+import { skills } from "../data/about";
 import pfp from "../assets/projects/pfp.png";
+import SkillsCard from "../components/ui/SkillsCard";
 
 export default function About() {
   return (
-    <div id="work" className="scroll-mt-24 flex flex-col gap-10 my-10 sm:my-20 sm:px-20">
+    <div id="about" className="scroll-mt-24 flex flex-col gap-10 my-10 sm:my-20 sm:px-20">
       {/* Section Title */}
-      <div className="flex justify-start mt-4 md:text-5xl tracking-tight gap-2">
+      <div className="flex justify-start mt-4 text-4xl md:text-5xl tracking-tight gap-2">
         <span className="text-slate-600 font-semibold">ABOUT ME</span>
         <span className="text-[#007bff] font-bold">.</span>
       </div>
 
       {/* Section Content */}
-      <div className="mx-auto max-w-6xl grid gap-12 md:grid-cols-2 md:items-center">
+      <div className="mx-auto max-w-6xl flex flex-col md:flex-row gap-12 md:grid-cols-2 md:items-center">
         {/* About me */}
         <div>
           {/* Accent line */}
@@ -48,17 +50,19 @@ export default function About() {
         </div>
 
         {/* Image */}
-        <div className="relative">
-          <div className="relative overflow-hidden rounded-2xl">
-            <img
-              src={pfp}
-              alt="image not found"
-              className="h-[420px] md:h-[520px] w-full object-cover"
-            />
-          </div>
-        </div>
-      </div>      
+        <img
+          src={pfp}
+          alt="image not found"
+          className="h-[340px] md:h-[420px] w-auto object-cover rounded-2xl"
+        />
+      </div>
 
+      {/* Skills */}
+      <div className="flex flex-row gap-4 justify-center">
+        {skills.map((s) => (
+          <SkillsCard title={s.title} skills={s.skills}/>
+        ))}
+      </div>
     </div>
   )
 }

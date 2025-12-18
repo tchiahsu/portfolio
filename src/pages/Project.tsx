@@ -5,7 +5,7 @@ export default function Project() {
   return (
     <div id="projects" className="scroll-mt-24 flex flex-col gap-10 my-10 sm:my-20 sm:px-20">
       {/* Section Title */}
-      <div className="flex justify-start mt-4 md:text-5xl tracking-tight gap-2">
+      <div className="flex justify-start mt-4 text-4xl md:text-5xl tracking-tight gap-2">
         <span className="text-slate-600 font-semibold">PROJECTS</span>
         <span className="text-[#007bff] font-bold">.</span>
       </div>
