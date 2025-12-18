@@ -39,13 +39,14 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
             <li key={s} className="rounded-full bg-slate-400 px-2 py-1">{s}</li>
           ))}
         </ul>
-        <div className="cursor-pointer font-semibold text-lg sm:text-xl hover:underline">
+        <div className="font-semibold text-lg sm:text-xl">
           {title}
         </div>
         <div className="text-gray-400 text-xs sm:text-sm">
           {description}
         </div>
       </div>
+
       {/* Links to Sites */}
       <div className="flex flex-row gap-2 mt-2">
         {github && (
