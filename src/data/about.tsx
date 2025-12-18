@@ -5,10 +5,10 @@ export const skills = [
   },
   {
     title: "Frameworks & Libraries",
-    skills: ["React", "Socket.IO", "Node.js", "Express.js", "Vite", "Tailwind CSS", "Postman", "Docker", "Next.js"]
+    skills: ["React", "Socket.IO", "Node.js", "Express.js", "Tailwind CSS", "Docker"]
   },
   {
     title: "Database Management",
-    skills: ["MySQL", "MongoDB", "Prisma ORM"]
+    skills: ["MySQL", "MongoDB"]
   }
 ]
