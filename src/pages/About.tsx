@@ -40,7 +40,7 @@ export default function About() {
             </p>
             
             <p>
-              Lately, I've also started exploring AI and machine learning. I built a competitor-analysis tool using
+              I've also started exploring AI and machine learning. I built a competitor-analysis tool using
               DigitalOcean's Gradient AI with multiple agentic workflows to analyze market strategy and pricing.
               Currently, I'm working on a financial insights application that uses Gemeni AI to generate deeper
               insights from personal financial data.
