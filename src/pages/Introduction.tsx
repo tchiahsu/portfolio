@@ -9,7 +9,7 @@ export default function Introduction() {
           Tony Hsu Tai.
         </div>
         <div className="text-gray-600 text-5xl tracking-tight font-bold md:text-6xl lg:text-7xl">
-          Sometimes I like to code.
+          I like writing code.
         </div>
       </div>
       <div className="text-gray-600 text-md md:text-md sm:w-3/4 mt-6">
