@@ -36,7 +36,7 @@ export const projectData = [
     title: "Spotify Profile",
     description: "A web application to visualize personalized Spotify data using the Spotify Web API.",
     skills: ["TypeScript", "React", "Spotify API"],
-    github: "",
+    github: "https://github.com/tchiahsu/spotify-profile-app",
     website: ""
   },
   {
