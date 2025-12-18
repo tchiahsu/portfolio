@@ -1,14 +1,19 @@
+import { FaGithub } from "react-icons/fa";
+import { HiLink } from "react-icons/hi";
+
 type ProjectCardProps = {
   thumbnail: string;
   preview: string;
   title: string;
   description: string;
   skills: string[];
+  github: string;
+  website: string;
 }
 
-const ProjectCard = ({ thumbnail, preview, title, description, skills }: ProjectCardProps) => {
+const ProjectCard = ({ thumbnail, preview, title, description, skills, github, website }: ProjectCardProps) => {
   return (
-    <div className="flex flex-col gap-1.5 sm:gap-2">
+    <div className="flex h-full flex-col gap-2">
       {/* Image Effect */}
       <div
         className="group relative w-full overflow-hidden rounded-lg bg-gradient-to-t from-transparent via-gray-100/80 to-gray-100 aspect-[16/10] max-h-[420px]"
@@ -27,16 +32,29 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills }: Project
           className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         />
       </div>
-      <ul className="flex flex-wrap gap-2 mb-2 text-[7pt] sm:text-[8pt] text-white font-semibold font-mono">
-        {skills.map((s) => (
-          <li key={s} className="rounded-full bg-[#007BFF] px-3 py-1">{s}</li>
-        ))}
-      </ul>
-      <div className="cursor-pointer font-semibold text-lg sm:text-xl hover:underline">
-        {title}
+
+      <div className="flex flex-col flex-grow gap-2">
+        <ul className="flex flex-wrap gap-2 mt-2 text-[7pt] sm:text-[8pt] text-white font-semibold font-mono">
+          {skills.map((s) => (
+            <li key={s} className="rounded-full bg-slate-400 px-2 py-1">{s}</li>
+          ))}
+        </ul>
+        <div className="font-semibold text-lg sm:text-xl">
+          {title}
+        </div>
+        <div className="text-gray-400 text-xs sm:text-sm">
+          {description}
+        </div>
       </div>
-      <div className="text-gray-400 text-xs sm:text-sm">
-        {description}
+
+      {/* Links to Sites */}
+      <div className="flex flex-row gap-2 mt-2">
+        {github && (
+          <div className="cursor-pointer flex flex-row items-center gap-1 bg-slate-600 text-white text-sm rounded-md px-2 py-1"><FaGithub /> Github</div>
+        )}
+        {website && (
+          <div className="cursor-pointer flex flex-row items-center gap-1 bg-slate-600 text-white text-sm rounded-md px-2 py-1"><HiLink /> Website</div>
+        )}
       </div>
     </div>
   )

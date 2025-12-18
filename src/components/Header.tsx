@@ -56,7 +56,7 @@ export default function Header() {
         
         <div
           className={clsx(
-            "fixed inset-y-0 right-0 w-3/5 bg-[#D9E8F5] shadow-2xl z-40 flex flex-col justify-center items-center gap-4 transform transition-transform duration-300 md:hidden",
+            "fixed inset-y-0 right-0 w-3/5 bg-slate-600 shadow-2xl z-40 flex flex-col justify-center items-center gap-4 transform transition-transform duration-300 md:hidden",
             openMenu ? "translate-x-0" : "translate-x-full"
           )}
           onClick={() => setOpenMenu(false)}
@@ -64,18 +64,18 @@ export default function Header() {
           {/* Hamburger Menu Options */}
           {openMenu && (
             <div className="absolute flex flex-col justify-center items-center gap-12 h-full">
-              <a href="#projects"  className="font-mono cursor-pointer text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">
+              <a href="#projects"  className="font-mono cursor-pointer text-white hover:scale-105 hover:font-semibold active:scale-100">
                 Projects
               </a>
-              <a href="#work"  className="font-mono cursor-pointer text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">
+              <a href="#work"  className="font-mono cursor-pointer text-white hover:scale-105 hover:font-semibold active:scale-100">
                 Work Experience
               </a>
-              <a href="#about" className="font-mono cursor-pointer text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">
+              <a href="#about" className="font-mono cursor-pointer text-white hover:scale-105 hover:font-semibold active:scale-100">
                 About Me
               </a>
-              <button className="font-mono border rounded-md px-6 py-2 mx-2 cursor-pointer border-[#007BFF] text-[#007BFF] hover:scale-105 hover:font-semibold active:scale-100">
+              <a href={resume} target="_blank" className="font-mono border rounded-md px-6 py-2 mx-2 cursor-pointer border-white text-white hover:scale-105 hover:font-semibold active:scale-100">
                 Resume
-              </button>
+              </a>
             </div>
           )}
         </div>

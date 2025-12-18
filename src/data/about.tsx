@@ -1,47 +1,14 @@
-import neu from "../assets/projects/neu_logo.png";
-
-export const education = [
+export const skills = [
   {
-    logo: neu,
-    college: "Northeastern University",
-    degree: "M.S. in Computer Science (4.00/4.00)",
-    start: "Sep 2024",
-    end: "May 2027",
-    award: ""
+    title: "Programming Languages",
+    skills: ["Python", "TypeScript", "Java", "C/C++", "JavaScript"]
   },
   {
-    logo: neu,
-    college: "Northeastern University",
-    degree: "M.S. in Engineering Management (3.88/4.00)",
-    start: "Jul 2019",
-    end: "May 2021",
-    award: ""
+    title: "Frameworks & Libraries",
+    skills: ["React", "Socket.IO", "Node.js", "Express.js", "Vite", "Tailwind CSS", "Postman", "Docker", "Next.js"]
   },
   {
-    logo: neu,
-    college: "Northeastern University",
-    degree: "B.S. in Industrial Engineering (3.75/4.00)",
-    start: "Sep 2016",
-    end: "May 2021",
-    awards: "Magna Cum Laude"
+    title: "Database Management",
+    skills: ["MySQL", "MongoDB", "Prisma ORM"]
   }
 ]
-
-export const skills = [
-  "Python",
-  "TypeScript",
-  "Java",
-  "C/C++",
-  "JavaScript",
-  "R Programming",
-  "React",
-  "Socket.IO",
-  "Node.js",
-  "Express.js",
-  "Postman",
-  "Next.js",
-  "MySQL",
-  "MondoDB",
-  "Prisma ORM"
-]
-
