@@ -12,24 +12,42 @@ export default function About() {
       </div>
 
       {/* Section Content */}
-      <div className="mx-auto max-w-6xl flex flex-col md:flex-row gap-12 md:grid-cols-2 md:items-center">
+      <div className="mx-auto max-w-6xl flex flex-col md:flex-row gap-12 items-center">
         {/* About me */}
         <div>
           {/* Accent line */}
-          <div className="mb-8 h-[2px] w-55 bg-[#007bff]" />
+          <div className="mb-8 h-0.5 w-55 bg-[#007bff]" />
 
-          {/* Subtitle */}
-          <p className="mt-6 text-lg font-semibold text-slate-400">
-            I’m interested in solving real-world problems using clean and usable software.
-          </p>
+          {/* Subtitle + Image row */}
+          <div className="flex flex-row gap-2 items-center sm:gap-6">
+            {/* Image */}
+            <img
+              src={pfp}
+              alt="Profile photo"
+              className="
+                mt-4 sm:mt-0
+                w-32
+                sm:w-36
+                md:w-40
+                h-auto
+                rounded-2xl
+                object-cover
+                shrink-0
+              "
+            />
+            {/* Subtitle */}
+            <p className="text-lg font-semibold text-slate-400 max-w-md">
+              I'm interested in solving real-world problems using clean and usable software.
+            </p>
+          </div>
 
           {/* Body */}
           <div className="mt-6 space-y-4 text-sm leading-6 text-zinc-600">
             <p>
               I studied Industrial Engineering for undergrad and spent nearly three years working as an operations
-              manager at Boston Microgreens. We used spreadhseets extensivelly to manage data and keep things running.
+              manager at Boston Microgreens. We used spreadsheets extensively to manage data and keep things running.
               While building and maintaining those spreadsheets, I began to realize how powerful good software can be
-              for any businesses operations, and that's what pushed me to transition into computer science.
+              for any business’s operations, and that's what pushed me to transition into computer science.
             </p>
 
             <p>
@@ -38,22 +56,15 @@ export default function About() {
               web application to manage order and planting data for my former company so they could finally move away
               from those spreadsheets for good.
             </p>
-            
+
             <p>
               I've also started exploring AI and machine learning. I built a competitor-analysis tool using
               DigitalOcean's Gradient AI with multiple agentic workflows to analyze market strategy and pricing.
-              Currently, I'm working on a financial insights application that uses Gemeni AI to generate deeper
+              Currently, I'm working on a financial insights application that uses Gemini AI to generate deeper
               insights from personal financial data.
             </p>
           </div>
         </div>
-
-        {/* Image */}
-        <img
-          src={pfp}
-          alt="image not found"
-          className="h-[340px] md:h-[420px] w-auto object-cover rounded-2xl"
-        />
       </div>
 
       {/* Skills */}

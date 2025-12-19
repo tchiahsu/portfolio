@@ -43,8 +43,8 @@ const WorkCard = ({ logo, jobTitle, company, summary, start, finish, location, d
             <div className="text-[13px] text-slate-600 trucate">{summary}</div>
             <div className="flex flex-row items-center gap-3 mt-1 text-[13px] text-slate-500">
               <div className="flex flex-row gap-2 items-center">{start}<FaArrowRight />{finish}</div>
-              <LuDot />
-              <div>{location}</div>
+              <LuDot className="text-transparent sm:text-slate-500"/>
+              <div className="text-transparent sm:text-slate-500">{location}</div>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ const WorkCard = ({ logo, jobTitle, company, summary, start, finish, location, d
       <div>
         <div className={clsx(
           "overflow-hidden transition-all duration-300 pt-4 mx-4 px-4 border-l-2 border-slate-400",
-          open ? "max-h-[500px] opacity-100 mt-3" : "max-h-0 opacity-0 mt-0"
+          open ? "max-h-125 opacity-100 mt-3" : "max-h-0 opacity-0 mt-0"
         )}>
           <div className="text-sm font-semibold text-[#007bff] mb-4">Responsabilities</div>
           <ul className="list-disc pl-5 space-y-2 text-sm text-slate-600 mb-5">
