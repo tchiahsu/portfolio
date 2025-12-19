@@ -17,7 +17,7 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
       <div className="flex h-full flex-col gap-2">
         {/* Image Effect */}
         <div
-          className="group relative w-full overflow-hidden rounded-lg bg-gradient-to-t from-transparent via-gray-100/80 to-gray-100 aspect-[16/10] max-h-[420px]"
+          className="group relative w-full overflow-hidden rounded-lg bg-linear-to-t from-transparent via-gray-100/80 to-gray-100 aspect-16/10 max-h-105"
         >
           <img
             src={thumbnail}
@@ -34,10 +34,10 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
           />
         </div>
 
-        <div className="flex flex-col flex-grow gap-2">
-          <ul className="flex flex-wrap gap-2 mt-2 text-[7pt] sm:text-[8pt] text-white font-semibold font-mono">
+        <div className="flex flex-col grow gap-2">
+          <ul className="flex flex-wrap gap-1 my-2 text-white font-semibold">
             {skills.map((s) => (
-              <li key={s} className="rounded-full bg-slate-400 px-2 py-1">{s}</li>
+              <li key={s} className="rounded-full bg-blue-50 text-blue-700 border border-blue-100 px-3 py-1 text-xs font-medium">{s}</li>
             ))}
           </ul>
           <div className="font-semibold text-lg sm:text-xl">
