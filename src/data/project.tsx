@@ -17,7 +17,8 @@ export const projectData = [
     description: "It is a web-based application designed for microgreens farms to manage day-to-day operations.",
     skills: ["Python", "TypeScript", "React", "MySQL", "FastAPI"],
     github: "https://github.com/tchiahsu/microgreen_app",
-    website: ""
+    website: "",
+    hackathon: ""
   },
   {
     thumbnail: pokeduelT,
@@ -27,7 +28,8 @@ export const projectData = [
     description: "A full-stack turn-based Pokémon battle game inspired by Nintendo 64's Pokémon Stadium.",
     skills: ["TypeScript", "React", "Socket.IO", "Express.js"],
     github: "https://github.com/tchiahsu/pokeduel",
-    website: "https://pokeduel-gbbx.onrender.com/#/"
+    website: "https://pokeduel-gbbx.onrender.com/#/",
+    hackathon: ""
   },
   {
     thumbnail: spotifyT,
@@ -37,7 +39,8 @@ export const projectData = [
     description: "A web application to visualize personalized Spotify data using the Spotify Web API.",
     skills: ["TypeScript", "React", "Spotify API"],
     github: "https://github.com/tchiahsu/spotify-profile",
-    website: ""
+    website: "",
+    hackathon: ""
   },
   {
     thumbnail: productLensT,
@@ -47,6 +50,7 @@ export const projectData = [
     description: "A competitor audit tool that cuts through the noise to uncover real competitive threats in real-time.",
     skills: ["Gradient AI", "Python", "TypeScript", "React"],
     github: "https://github.com/tchiahsu/product-lens",
-    website: ""
+    website: "",
+    hackathon: "https://luma.com/MLHAIHackathonNYC"
   }
 ]

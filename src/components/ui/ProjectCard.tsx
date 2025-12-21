@@ -1,5 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import { HiLink } from "react-icons/hi";
+import { FaLaptopCode } from "react-icons/fa";
 
 type ProjectCardProps = {
   thumbnail: string;
@@ -9,9 +10,10 @@ type ProjectCardProps = {
   skills: string[];
   github: string;
   website: string;
+  hackathon: string;
 }
 
-const ProjectCard = ({ thumbnail, preview, title, description, skills, github, website }: ProjectCardProps) => {
+const ProjectCard = ({ thumbnail, preview, title, description, skills, github, website, hackathon }: ProjectCardProps) => {
   return (
     <div className="flex h-full flex-col gap-2 rounded-xl border border-gray-200 bg-white p-3 hover:border-gray-300 transition-colors">
       <div className="flex h-full flex-col gap-2">
@@ -49,13 +51,38 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
         </div>
 
         {/* Links to Sites */}
-        <div className="flex flex-row gap-2 mt-2">
-          {github && (
-            <div className="cursor-pointer flex flex-row items-center gap-1 bg-slate-600 text-white text-sm rounded-md px-2 py-1"><FaGithub /> Github</div>
-          )}
-          {website && (
-            <div className="cursor-pointer flex flex-row items-center gap-1 bg-slate-600 text-white text-sm rounded-md px-2 py-1"><HiLink /> Website</div>
-          )}
+        <div className="flex justify-between items-center mt-2">
+          <div className="flex flex-row gap-2">
+            {github && (
+              <a
+                href={github}
+                target="_blank"
+                className="cursor-pointer flex flex-row items-center gap-1 bg-slate-600 text-white text-sm rounded-md px-2 py-1"
+              >
+                <FaGithub /> Github
+              </a>
+            )}
+            {website && (
+              <a
+                href={website}
+                target="_blank"
+                className="cursor-pointer flex flex-row items-center gap-1 bg-slate-600 text-white text-sm rounded-md px-2 py-1"
+              >
+                <HiLink /> Website
+              </a>
+            )}
+          </div>
+          <div>
+            {hackathon && (
+              <a
+                href={hackathon}
+                target="_blank"
+                className="cursor-pointer inline-flex items-center rounded-full border border-zinc-200 bg-zinc-100 px-3 py-1 gap-2 text-xs font-medium text-zinc-700"
+              >
+                <FaLaptopCode /> Hack with MLH and DigitalOcean: NYC
+              </a>              
+            )}
+          </div>
         </div>
       </div>
     </div>

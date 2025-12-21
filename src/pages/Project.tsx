@@ -21,6 +21,7 @@ export default function Project() {
             skills={d.skills}
             github={d.github}
             website={d.website}
+            hackathon={d.hackathon}
           />
         ))}
       </div>
