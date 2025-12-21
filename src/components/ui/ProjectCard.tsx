@@ -51,7 +51,7 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
         </div>
 
         {/* Links to Sites */}
-        <div className="flex justify-between items-center mt-2">
+        <div className="flex flex-col gap-4 md:flex-row md:justify-between md:items-center mt-2">
           <div className="flex flex-row gap-2">
             {github && (
               <a
