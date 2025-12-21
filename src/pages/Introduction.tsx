@@ -13,7 +13,7 @@ export default function Introduction() {
         </div>
       </div>
       <div className="text-gray-600 text-md md:text-md sm:w-3/4 mt-6">
-        I'm an aspiring software engineer currently pursuing a Master's degree in Computer Science. I enjoy building full-stack web applications and turining messy, real-world problems into clean, usable software.
+        I'm an aspiring software engineer currently pursuing a Master's degree in Computer Science. I enjoy building full-stack web applications and turning messy, real-world problems into clean, usable software.
       </div>
     </div>
   )

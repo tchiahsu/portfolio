@@ -13,8 +13,8 @@ export const projectData = [
     thumbnail: microgreenT,
     preview: microgreenP,
     width: "120",
-    title: "GreenTrack: Microgreen Order Management System",
-    description: "It is a web-based application designed for microgreen farms to manage day-to-day operations.",
+    title: "GreenTrack: Microgreens Order Management System",
+    description: "It is a web-based application designed for microgreens farms to manage day-to-day operations.",
     skills: ["Python", "TypeScript", "React", "MySQL", "FastAPI"],
     github: "https://github.com/tchiahsu/microgreen_app",
     website: ""
@@ -23,8 +23,8 @@ export const projectData = [
     thumbnail: pokeduelT,
     preview: pokeduelP,
     width: "140",
-    title: "PokeDuel: Pokemon Battle Game",
-    description: "A full-stack turn-based Pokemon battle game inspired by Nintendo 64's Pokemon Stadium.t is a web-based application designed for microgreen farms to manage day-to-day operations.",
+    title: "PokeDuel: Pokémon Battle Game",
+    description: "A full-stack turn-based Pokémon battle game inspired by Nintendo 64's Pokémon Stadium.",
     skills: ["TypeScript", "React", "Socket.IO", "Express.js"],
     github: "https://github.com/tchiahsu/pokeduel",
     website: "https://pokeduel-gbbx.onrender.com/#/"
@@ -44,7 +44,7 @@ export const projectData = [
     preview: productLensP,
     width: "150",
     title: "Product Lens: Competitor Analysis",
-    description: "A competitor audit tool that cuts through the noise to uncover real competitive threats in real-time",
+    description: "A competitor audit tool that cuts through the noise to uncover real competitive threats in real-time.",
     skills: ["Gradient AI", "Python", "TypeScript", "React"],
     github: "https://github.com/tchiahsu/product-lens",
     website: ""

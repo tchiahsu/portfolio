@@ -36,7 +36,7 @@ export default function About() {
               "
             />
             {/* Subtitle */}
-            <p className="text-lg font-semibold text-slate-400 max-w-md">
+            <p className="text-lg font-semibold text-slate-400 max-w-lg">
               I'm interested in solving real-world problems using clean and usable software.
             </p>
           </div>

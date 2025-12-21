@@ -65,7 +65,7 @@ const WorkCard = ({ logo, jobTitle, company, summary, start, finish, location, d
           "overflow-hidden transition-all duration-300 pt-4 mx-4 px-4 border-l-2 border-slate-400",
           open ? "max-h-125 opacity-100 mt-3" : "max-h-0 opacity-0 mt-0"
         )}>
-          <div className="text-sm font-semibold text-[#007bff] mb-4">Responsabilities</div>
+          <div className="text-sm font-semibold text-[#007bff] mb-4">Responsibilities</div>
           <ul className="list-disc pl-5 space-y-2 text-sm text-slate-600 mb-5">
             {description.map((item, i) => (
               <li key={i}>{item}</li>
