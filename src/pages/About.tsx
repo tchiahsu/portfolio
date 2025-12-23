@@ -44,17 +44,19 @@ export default function About() {
           {/* Body */}
           <div className="mt-6 space-y-4 text-sm leading-6 text-zinc-600">
             <p>
-              I studied Industrial Engineering for undergrad and spent nearly three years working as an operations
-              manager at Boston Microgreens. We used spreadsheets extensively to manage data and keep things running.
-              While building and maintaining those spreadsheets, I began to realize how powerful good software can be
-              for any business’s operations, and that's what pushed me to transition into computer science.
+              I studied Industrial Engineering for my undegraduate degree and spent nearly three year working as an
+              operations manager at Boston Micorgreens, where spreadsheets were the backbone of day-to-day operations.
+              While building and maintaining those systems, I began to see both their strengths and limiations, but
+              particularly how much more effective the business could be with purpose-built software. That experience
+              fundamentally reshaped how I thought about operations and ultimately pushed me to transition into
+              computer science.
             </p>
 
             <p>
-              I'm now pursuing a Master's degree in Computer Science, where I attempt to use software development
-              to build scalable, high-impact solutions to real-world problems. Recently, I finished building a new
-              web application to manage order and planting data for my former company so they could finally move away
-              from those spreadsheets for good.
+              I'm now pursuing a Master's degree in Computer Science, where I attempt to use software development to
+              build scalable, high-impact solutions to real-world problems. Recenetly, I applied that mindset by building
+              a web application to manager order and planting data for my former company, enabling them to move away from
+              spreadsheets towards a more robust automated system.
             </p>
 
             <p>
