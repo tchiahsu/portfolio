@@ -51,7 +51,7 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
         </div>
 
         {/* Links to Sites */}
-        <div className="flex flex-col gap-4 md:flex-row md:justify-between md:items-center mt-2">
+        <div className="flex flex-col gap-4 xl:flex-row xl:justify-between xl:items-center mt-2">
           <div className="flex flex-row gap-2">
             {github && (
               <a
@@ -77,7 +77,7 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
               <a
                 href={hackathon}
                 target="_blank"
-                className="cursor-pointer inline-flex items-center rounded-full border border-zinc-200 bg-zinc-100 px-3 py-1 gap-2 text-xs font-medium text-zinc-700"
+                className="cursor-pointer truncate inline-flex items-center rounded-full border border-zinc-200 bg-zinc-100 px-3 py-1 gap-2 text-xs font-medium text-zinc-700"
               >
                 <FaLaptopCode /> Hack with MLH and DigitalOcean: NYC
               </a>              
