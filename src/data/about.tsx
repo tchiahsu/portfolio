@@ -1,14 +1,18 @@
 export const skills = [
   {
     title: "Programming Languages",
-    skills: ["Python", "TypeScript", "Java", "C/C++", "JavaScript"]
+    skills: ["Python", "TypeScript", "JavaScript", "C/C++", "Java"]
   },
   {
-    title: "Frameworks & Libraries",
-    skills: ["React", "Socket.IO", "Node.js", "Express.js", "Tailwind CSS", "Docker"]
+    title: "Frontend Technologies",
+    skills: ["React", "Tailwind CSS", "HTML5", "CSS3", "Vite"]
+  },
+  {
+    title: "Backend Technologies",
+    skills: ["Node.js", "Express.js", "Next.js", "FastAPI", "REST API", "Socket.IO", "JWT"]
   },
   {
     title: "Database Management",
-    skills: ["MySQL", "MongoDB"]
+    skills: ["MySQL", "PostgreSQL", "MongoDB"]
   }
 ]
