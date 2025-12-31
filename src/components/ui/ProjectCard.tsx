@@ -110,7 +110,7 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
             onClick={() => setOpen(false)}
           >
             <div
-              className="relative flex flex-col gap-4 sm:gap-8 w-full max-w-6xl px-6 pt-5 pb-10 bg-white rounded-xl"
+              className="relative flex flex-col gap-4 sm:gap-8 max-w-4xl px-6 pt-5 pb-10 bg-white rounded-xl"
               onClick={(e) => e.stopPropagation()}
             >
               <button
@@ -122,7 +122,6 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
                 <IoClose />
               </button>
 
-              {/* MOBILE: hide video */}
               <video
                 controls
                 autoPlay
@@ -133,12 +132,12 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
                 <source src={demo} type="video/mp4" />
               </video>
 
-              {/* MOBILE: show ONLY title */}
+              {/* show ONLY title */}
               <div className="block sm:hidden text-slate-800 text-2xl font-bold">
                 {title}
               </div>
 
-              {/* DESKTOP+: show full details */}
+              {/* show full details */}
               <div className="flex flex-col gap-3">
                 <ul className="flex flex-wrap gap-2 text-white font-semibold">
                   {skills.map((s) => (

@@ -10,6 +10,7 @@ import plImage from "../assets/projects/product_lens_app.png";
 
 // Import Videos for Portfolio
 import plDemo from "../assets/demo/product_lens_demo.mp4";
+import mgDemo from "../assets/demo/microgreen_demo.mp4";
 
 export const projectData = [
   {
@@ -21,7 +22,7 @@ export const projectData = [
     github: "https://github.com/tchiahsu/microgreen_app",
     website: "",
     hackathon: "",
-    demo: ""
+    demo: mgDemo
   },
   {
     thumbnail: pokeThumbnail,
