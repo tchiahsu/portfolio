@@ -53,8 +53,8 @@ export default function About() {
             </p>
 
             <p>
-              I'm now pursuing a Master's degree in Computer Science, where I attempt to use software development to
-              build scalable, high-impact solutions to real-world problems. Recenetly, I applied that mindset by building
+              I'm now pursuing a Master's degree in Computer Science, where I attempt to use software development to 
+              high-impact solutions to real-world problems. Recenetly, I applied that mindset by building
               a web application to manager order and planting data for my former company, enabling them to move away from
               spreadsheets towards a more robust automated system.
             </p>
