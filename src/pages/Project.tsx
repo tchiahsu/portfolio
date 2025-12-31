@@ -22,6 +22,7 @@ export default function Project() {
             github={d.github}
             website={d.website}
             hackathon={d.hackathon}
+            demo={d.demo}
           />
         ))}
       </div>
