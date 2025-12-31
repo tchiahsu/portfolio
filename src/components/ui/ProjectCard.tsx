@@ -24,7 +24,7 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
           <img
             src={thumbnail}
             alt="image not found"
-            className="cursor-pointer relative z-10 object-cover object-top transition-all duration-300 ease-out group-hover:-translate-y-2 group-hover:scale-105 group-hover:opacity-0"
+            className="cursor-pointer relative z-10 h-full w-full object-cover object-top transition-all duration-300 ease-out group-hover:-translate-y-2 group-hover:scale-105 group-hover:opacity-0"
           />
           <img
             src={preview}
