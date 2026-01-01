@@ -9,10 +9,10 @@ export const skills = [
   },
   {
     title: "Backend Technologies",
-    skills: ["Node.js", "Express.js", "Next.js", "FastAPI", "REST API", "Socket.IO", "JWT"]
+    skills: ["Node.js", "Express.js", "FastAPI", "REST API", "Socket.IO", "JWT"]
   },
   {
     title: "Database Management",
-    skills: ["MySQL", "PostgreSQL", "MongoDB"]
+    skills: ["MySQL", "PostgreSQL"]
   }
 ]

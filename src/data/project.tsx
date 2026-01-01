@@ -12,6 +12,7 @@ import plImage from "../assets/projects/product_lens_app.png";
 import plDemo from "../assets/demo/product_lens_demo.mp4";
 import mgDemo from "../assets/demo/microgreen_demo.mp4";
 import pokeDemo from "../assets/demo/poke_demo.mp4";
+import spotifyDemo from "../assets/demo/spotify_demo.mp4";
 
 export const projectData = [
   {
@@ -41,11 +42,11 @@ export const projectData = [
     preview: spotifyImage,
     title: "Spotify Profile",
     description: "A personalized analytics dashboard that transforms Spotify listening history into insights on top artists, tracks, playlists, and recent activity. Built with React and TypeScript, integrating OAuth 2.0 and the Spotify Web API for secure, real-time data access.",
-    skills: ["TypeScript", "React", "Spotify API", "OAuth 2.0", "Express.js"],
-    github: "https://github.com/tchiahsu/spotify-profile",
+    skills: ["TypeScript", "React", "Spotify Web API", "OAuth 2.0", "Express.js"],
+    github: "https://github.com/tchiahsu/spotify-listening-profile",
     website: "",
     hackathon: "",
-    demo: ""
+    demo: spotifyDemo
   },
   {
     thumbnail: plThumbnail,
