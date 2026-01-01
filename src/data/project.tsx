@@ -18,7 +18,7 @@ export const projectData = [
   {
     thumbnail: mgThumbnail,
     preview: mgImage,
-    title: "GreenTrack: Microgreens Order Management System",
+    title: "GreenTrack: Microgreens Order Management",
     description: "A full-stack microgreens operations platform that manages crops, planting schedules, orders, and deliveries in one system. Built with React and TypeScript on the frontend, a SQL-backed database, and a REST API backend to ensure data integrity and real-time operational visibility.",
     skills: ["Python", "TypeScript", "React", "MySQL", "FastAPI"],
     github: "https://github.com/tchiahsu/microgreen_app",
@@ -40,7 +40,7 @@ export const projectData = [
   {
     thumbnail: spotifyThumbnail,
     preview: spotifyImage,
-    title: "Spotify Profile",
+    title: "Spotify Listening Profile",
     description: "A personalized analytics dashboard that transforms Spotify listening history into insights on top artists, tracks, playlists, and recent activity. Built with React and TypeScript, integrating OAuth 2.0 and the Spotify Web API for secure, real-time data access.",
     skills: ["TypeScript", "React", "Spotify Web API", "OAuth 2.0", "Express.js"],
     github: "https://github.com/tchiahsu/spotify-listening-profile",
