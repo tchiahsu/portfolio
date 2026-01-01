@@ -56,7 +56,7 @@ export const projectData = [
     skills: ["Gradient AI", "Python", "TypeScript", "React"],
     github: "https://github.com/tchiahsu/product-lens",
     website: "",
-    hackathon: "Hack with MLH and DigitalOcean: NYC",
+    hackathon: "MLH x DigitalOcean Hackathon",
     demo: plDemo
   }
 ]
