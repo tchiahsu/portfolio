@@ -44,25 +44,24 @@ export default function About() {
           {/* Body */}
           <div className="mt-6 space-y-4 text-sm leading-6 text-zinc-600">
             <p>
-              I studied Industrial Engineering for my undegraduate degree and spent nearly three years working as an
-              operations manager at Boston Micorgreens, where spreadsheets were the backbone of day-to-day operations.
-              While building and maintaining those systems, I began to see both their strengths and limiations, but
-              particularly how much more effective the business could be with purpose-built software. That experience
-              fundamentally reshaped how I thought about operations and ultimately pushed me to transition into
-              computer science.
+              I studied Industrial Engineering for my undergraduate degree and spent nearly three years working as an operations 
+              manager at Boston Microgreens, where spreadsheets were the backbone of day-to-day operations. While building and 
+              maintaining those systems, I began to see both their strengths and limitations, but particularly how much more 
+              effective the business could be with purpose-built software. That experience fundamentally reshaped how I thought 
+              about operations and ultimately pushed me to transition into computer science.
             </p>
 
             <p>
-              I'm now pursuing a Master's degree in Computer Science, where I attempt to use software development to 
-              high-impact solutions to real-world problems. Recenetly, I applied that mindset by building
-              a web application to manager order and planting data for my former company, enabling them to move away from
-              spreadsheets towards a more robust automated system.
+              I'm now pursuing a Master's degree in Computer Science, where I attempt to use software development to high-impact 
+              solutions to real-world problems. Recently, I applied that mindset by building a web application to manager order 
+              and planting data for my former company, enabling them to move away from spreadsheets towards a more robust 
+              automated system.
             </p>
 
             <p>
-              I've also started exploring AI and machine learning. I built a competitor-analysis tool using
-              DigitalOcean's Gradient AI with multiple agentic workflows to analyze market strategy and pricing.
-              Currently, I'm working on a financial insights application that uses Gemini AI to generate deeper
+              I've also started exploring AI and machine learning. I built a competitor-analysis tool using 
+              DigitalOcean's Gradient AI with multiple agentic workflows to analyze market strategy and pricing. 
+              Currently, I'm working on a financial insights application that uses Gemini AI to generate deeper 
               insights from personal financial data.
             </p>
           </div>
