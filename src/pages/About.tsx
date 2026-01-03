@@ -44,7 +44,7 @@ export default function About() {
           {/* Body */}
           <div className="mt-6 space-y-4 text-sm leading-6 text-zinc-600">
             <p>
-              I studied Industrial Engineering for my undegraduate degree and spent nearly three year working as an
+              I studied Industrial Engineering for my undegraduate degree and spent nearly three years working as an
               operations manager at Boston Micorgreens, where spreadsheets were the backbone of day-to-day operations.
               While building and maintaining those systems, I began to see both their strengths and limiations, but
               particularly how much more effective the business could be with purpose-built software. That experience
