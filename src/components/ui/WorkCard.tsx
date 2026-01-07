@@ -38,9 +38,9 @@ const WorkCard = ({ logo, jobTitle, company, summary, start, finish, location, d
 
           {/* Job Information */}
           <div className="flex flex-col gap-2 min-w-0">
-            <div className="text-xl font-semibold text-slate-900 truncate">{jobTitle}</div>
-            <div className="text-[13px] text-[#007bff] trucate">{company}</div>
-            <div className="text-[13px] text-slate-600 trucate">{summary}</div>
+            <div className="text-xl font-semibold text-slate-900">{jobTitle}</div>
+            <div className="text-[13px] text-[#007bff]">{company}</div>
+            <div className="text-[13px] text-slate-600">{summary}</div>
             <div className="flex flex-row items-center gap-3 mt-1 text-[13px] text-slate-500">
               <div className="flex flex-row gap-2 items-center">{start}<FaArrowRight />{finish}</div>
               <LuDot className="w-0 overflow-hidden sm:w-auto sm:overflow-visible text-transparent sm:text-slate-500"/>
