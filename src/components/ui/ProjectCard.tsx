@@ -73,6 +73,14 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
                 <FaGithub /> Github
               </a>
             )}
+            {demo && (
+              <button
+                onClick={() => setOpen(true)}
+                className="cursor-pointer flex flex-row items-center gap-1 bg-slate-600 text-white text-sm rounded-md px-2 py-1"
+              >
+                <MdSlowMotionVideo size={18} /> Demo
+              </button>
+            )}
             {website && (
               <a
                 href={website}
@@ -81,14 +89,6 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
               >
                 <HiLink /> Website
               </a>
-            )}
-            {demo && (
-              <button
-                onClick={() => setOpen(true)}
-                className="cursor-pointer flex flex-row items-center gap-1 bg-slate-600 text-white text-sm rounded-md px-2 py-1"
-              >
-                <MdSlowMotionVideo size={18} /> Demo
-              </button>
             )}
           </div>
           <div>
@@ -122,15 +122,18 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
                 <IoClose />
               </button>
 
-              <video
-                controls
-                autoPlay
-                muted
-                playsInline
-                className="block w-full rounded-xl bg-black"
-              >
-                <source src={demo} type="video/mp4" />
-              </video>
+              <div className="relative w-full overflow-hidden rounded-xl aspect-video bg-black">
+                <video
+                  controls
+                  autoPlay
+                  muted
+                  playsInline
+                  preload="metadata"
+                  className="absolute inset-0 h-full w-full object-cover"
+                >
+                  <source src={demo} type="video/mp4" />
+                </video>
+              </div>
 
               {/* show ONLY title */}
               <div className="block sm:hidden text-slate-800 text-2xl font-bold">
