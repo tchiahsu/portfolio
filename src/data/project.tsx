@@ -44,7 +44,7 @@ export const projectData = [
     description: "A personalized analytics dashboard that transforms Spotify listening history into insights on top artists, tracks, playlists, and recent activity. Built with React and TypeScript, integrating OAuth 2.0 and the Spotify Web API for secure, real-time data access.",
     skills: ["TypeScript", "React", "Spotify Web API", "OAuth 2.0", "Express.js"],
     github: "https://github.com/tchiahsu/spotify-listening-profile",
-    website: "",
+    website: "https://spotifylisten.vercel.app",
     hackathon: "",
     demo: spotifyDemo
   },
