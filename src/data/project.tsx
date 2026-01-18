@@ -7,12 +7,15 @@ import spotifyThumbnail from "../assets/projects/spotify_thumbnail.png";
 import spotifyImage from "../assets/projects/spotify_app.png";
 import plThumbnail from "../assets/projects/product_lens_thumbnail.png";
 import plImage from "../assets/projects/product_lens_app.png";
+import goatThumbnail from "../assets/projects/goatThumbnail.png";
+import goatImage from "../assets/projects/goatImage.png";
 
 // Import Videos for Portfolio
 import plDemo from "../assets/demo/product_lens_demo.mp4";
 import mgDemo from "../assets/demo/microgreen_demo.mp4";
 import pokeDemo from "../assets/demo/poke_demo.mp4";
 import spotifyDemo from "../assets/demo/spotify_demo.mp4";
+import goatDemo from "../assets/demo/goat_demo.mp4";
 
 export const projectData = [
   {
@@ -24,6 +27,7 @@ export const projectData = [
     github: "https://github.com/tchiahsu/microgreen_app",
     website: "",
     hackathon: "",
+    winner: "",
     demo: mgDemo
   },
   {
@@ -35,6 +39,7 @@ export const projectData = [
     github: "https://github.com/tchiahsu/pokeduel",
     website: "https://pokeduel-gbbx.onrender.com/#/",
     hackathon: "",
+    winner: "",
     demo: pokeDemo
   },
   {
@@ -46,7 +51,20 @@ export const projectData = [
     github: "https://github.com/tchiahsu/spotify-listening-profile",
     website: "https://spotifylisten.vercel.app",
     hackathon: "",
+    winner: "",
     demo: spotifyDemo
+  },
+  {
+    thumbnail: goatThumbnail,
+    preview: goatImage,
+    title: "The Time I Reincarnated as a Teleporting Goat in a 2D Puzzle Platformer",
+    description: "A 2D puzzle platformer where players solve spatial challenges using a dual-portal teleportation mechanic (moving, redirecting, and thinking in two places at once) while guiding a teleporting goat through handcrafted levels",
+    skills: ["Python", "Google Gemini"],
+    github: "https://github.com/jassem-razzaq/ttiraatgia2dpp/tree/main",
+    website: "",
+    hackathon: "GoatHack 2026",
+    winner: "",
+    demo: goatDemo,
   },
   {
     thumbnail: plThumbnail,
@@ -57,6 +75,7 @@ export const projectData = [
     github: "https://github.com/tchiahsu/product-lens",
     website: "",
     hackathon: "MLH x DigitalOcean Hackathon",
+    winner: "",
     demo: plDemo
   }
 ]

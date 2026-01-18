@@ -22,6 +22,7 @@ export default function Project() {
             github={d.github}
             website={d.website}
             hackathon={d.hackathon}
+            winner={d.winner}
             demo={d.demo}
           />
         ))}

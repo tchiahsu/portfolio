@@ -4,6 +4,9 @@ import { HiLink } from "react-icons/hi";
 import { FaLaptopCode } from "react-icons/fa";
 import { MdSlowMotionVideo } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
+import { LuTrophy } from "react-icons/lu";
+
+import clsx from "clsx";
 
 
 type ProjectCardProps = {
@@ -15,10 +18,11 @@ type ProjectCardProps = {
   github: string;
   website: string;
   hackathon: string;
+  winner: string;
   demo: string;
 }
 
-const ProjectCard = ({ thumbnail, preview, title, description, skills, github, website, hackathon, demo }: ProjectCardProps) => {
+const ProjectCard = ({ thumbnail, preview, title, description, skills, github, website, hackathon, winner, demo }: ProjectCardProps) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -91,15 +95,26 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
               </a>
             )}
           </div>
-          <div>
+          <div className="flex flew-row gap-2">
             {hackathon && (
-              <a
-                href={hackathon}
-                target="_blank"
-                className="cursor-pointer truncate inline-flex items-center rounded-full border border-zinc-200 bg-zinc-100 px-3 py-1 gap-2 text-xs font-medium text-zinc-700"
+              <div
+                className={clsx(
+                  "truncate inline-flex items-center rounded-full px-3 py-1 gap-2 text-xs font-medium border border-zinc-200 bg-zinc-100 text-zinc-700",
+                  // winner ? "border border-amber-300 bg-amber-100 text-amber-500" : "border border-zinc-200 bg-zinc-100 text-zinc-700"
+                )}
               >
                 <FaLaptopCode /> {hackathon}
-              </a>              
+              </div>             
+            )}
+            {winner && (
+              <div
+                className={clsx(
+                  "truncate inline-flex items-center rounded-full px-3 py-1 gap-2 text-xs font-medium border border-amber-300 bg-amber-100 text-amber-500",
+                  // winner ? "border border-amber-300 bg-amber-100 text-amber-500" : "border border-zinc-200 bg-zinc-100 text-zinc-700"
+                )}
+              >
+                <LuTrophy /> {winner}
+              </div>   
             )}
           </div>
         </div>
