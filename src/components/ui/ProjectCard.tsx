@@ -107,12 +107,7 @@ const ProjectCard = ({ thumbnail, preview, title, description, skills, github, w
               </div>             
             )}
             {winner && (
-              <div
-                className={clsx(
-                  "truncate inline-flex items-center rounded-full px-3 py-1 gap-2 text-xs font-medium border border-amber-300 bg-amber-100 text-amber-500",
-                  // winner ? "border border-amber-300 bg-amber-100 text-amber-500" : "border border-zinc-200 bg-zinc-100 text-zinc-700"
-                )}
-              >
+              <div className="truncate inline-flex items-center rounded-full px-3 py-1 gap-2 text-xs font-medium border border-amber-300 bg-amber-100 text-amber-500">
                 <LuTrophy /> {winner}
               </div>   
             )}

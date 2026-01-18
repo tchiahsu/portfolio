@@ -7,8 +7,8 @@ import spotifyThumbnail from "../assets/projects/spotify_thumbnail.png";
 import spotifyImage from "../assets/projects/spotify_app.png";
 import plThumbnail from "../assets/projects/product_lens_thumbnail.png";
 import plImage from "../assets/projects/product_lens_app.png";
-import goatThumbnail from "../assets/projects/goatThumbnail.png";
-import goatImage from "../assets/projects/goatImage.png";
+import goatThumbnail from "../assets/projects/goat_thumbnail.png";
+import goatImage from "../assets/projects/goat_app.png";
 
 // Import Videos for Portfolio
 import plDemo from "../assets/demo/product_lens_demo.mp4";
@@ -63,7 +63,7 @@ export const projectData = [
     github: "https://github.com/jassem-razzaq/ttiraatgia2dpp/tree/main",
     website: "",
     hackathon: "GoatHack 2026",
-    winner: "",
+    winner: "Winner - Best Game",
     demo: goatDemo,
   },
   {
