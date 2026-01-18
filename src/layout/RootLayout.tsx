@@ -12,7 +12,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 			<Header />
 
 			{/* Main Content */}
-			<main>
+			<main className="w-screen">
 				{children}
 			</main>
 

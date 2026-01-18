@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-5 px-5 md:px-10 lg:px-30 max-w-480">
+    <div className="flex flex-col gap-5 px-5 md:px-10 lg:px-30 max-w-480 mx-auto">
       <Introduction />
       <Project />
       <Work />
@@ -15,3 +15,5 @@ export default function Home() {
     </div>
   )
 }
+
+// flex flex-col items-center gap-5 px-5 md:px-10 lg:px-24 max-w-5xl mx-auto

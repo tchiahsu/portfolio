@@ -12,7 +12,7 @@ export default function About() {
       </div>
 
       {/* Section Content */}
-      <div className="mx-auto max-w-6xl flex flex-col md:flex-row gap-12 items-center">
+      <div className="mx-auto max-w-480 flex flex-col md:flex-row gap-12 items-center">
         {/* About me */}
         <div>
           {/* Accent line */}
