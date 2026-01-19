@@ -1,5 +1,5 @@
 import { LuGithub, LuLinkedin, LuMail } from "react-icons/lu";
-
+import { SiDevpost } from "react-icons/si";
 
 export default function Left() {
   return (
@@ -31,6 +31,15 @@ export default function Left() {
             className="hover:scale-105 hover:text-[#007BFF] hover:-translate-y-1 active:scale-100 cursor-pointer"
           >
             <LuMail />
+          </a>
+
+          {/* DevPost Icon */}
+          <a
+            href="https://devpost.com/tchiahsu?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+            aria-label="Devpost"
+            className="hover:scale-105 hover:text-[#007BFF] hover:-translate-y-1 active:scale-100 cursor-pointer"
+          >
+            <SiDevpost />
           </a>
         </div>
 
