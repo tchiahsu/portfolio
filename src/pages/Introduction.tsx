@@ -8,8 +8,8 @@ export default function Introduction() {
         <div className="text-gray-400 text-5xl tracking-tight font-bold md:text-6xl lg:text-7xl">
           Tony Hsu Tai.
         </div>
-        <div className="text-gray-600 text-5xl tracking-tight font-bold md:text-6xl lg:text-7xl">
-          I like writing code.
+        <div className="text-gray-600 text-4xl tracking-tight font-bold md:text-5xl lg:text-6xl">
+          I make things with code.
         </div>
       </div>
       <div className="text-gray-600 text-md md:text-md sm:w-3/4 mt-6">
