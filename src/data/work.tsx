@@ -1,7 +1,22 @@
 import microgreens from "../assets/projects/microgreens_logo.png";
 import roberthalf from "../assets/projects/rh_logo.png";
+import sentinel from "../assets/projects/sg_logo.png"
 
 export const workData = [
+  {
+    logo: sentinel,
+    jobTitle: "Software Developer Intern",
+    company: "Sentinel Group",
+    summary: "Financial services firm that helps organizations manage employee benefits, retiremenet plans, and HR-related solutions.",
+    location: "Wakefield, MA",
+    start: "May 2026",
+    finish: "Aug 2026",
+    description: [
+      "Migrate and optimize automated workflows using Apache Airflow (Python)",
+      "Develop and enhance application features using TypeScript in existing systems",
+      "Collaborate with engineers to build and improve scalable, production-ready software systems",
+    ]
+  },
   {
     logo: microgreens,
     jobTitle: "Operations Manager",
