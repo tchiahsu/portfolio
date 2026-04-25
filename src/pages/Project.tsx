@@ -1,31 +1,28 @@
-import { projectData } from "../data/project"
-import Card from "../components/ui/ProjectCard"
+import Title from "../components/ui/Title"
+import Projects from "../components/ui/Project"
+import { projectData } from "../data/project" 
 
 export default function Project() {
   return (
-    <div id="projects" className="scroll-mt-24 flex flex-col gap-10 my-10 sm:my-20 sm:px-20">
-      {/* Section Title */}
-      <div className="flex justify-start mt-4 text-4xl md:text-5xl tracking-tight gap-2">
-        <span className="text-slate-600 font-semibold">PROJECTS</span>
-        <span className="text-[#007bff] font-bold">.</span>
-      </div>
-
-      {/* Section Content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
-        {projectData.map((d) => (
-          <Card
-            thumbnail={d.thumbnail}
-            preview={d.preview}
-            title={d.title}
-            description={d.description}
-            skills={d.skills}
-            github={d.github}
-            website={d.website}
-            hackathon={d.hackathon}
-            winner={d.winner}
-            demo={d.demo}
-          />
-        ))}
+    <div id="projects" className="mb-24 pt-10">
+      <div className="flex flex-col gap-10 justify-center items-center">
+        <Title title="Selected Projects" />
+        <div className="font-bold font-serif text-3xl">Check Out My Latest Work</div>
+        <div className="grid grid-cols-3 gap-5">
+          {projectData.map((item) => (
+            <Projects
+              thumbnail={item.thumbnail}
+              preview={item.preview}
+              title={item.title}
+              description={item.description}
+              github={item.github}
+              website={item.website}
+              hackathon={item.hackathon}
+              winner={item.winner}
+              demo={item.demo}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )
