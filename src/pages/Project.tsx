@@ -8,7 +8,7 @@ export default function Project() {
       <div className="flex flex-col gap-10 justify-center items-center">
         <Title title="Selected Projects" />
         <div className="font-bold font-serif text-3xl">Check Out My Latest Work</div>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
           {projectData.map((item) => (
             <Projects
               thumbnail={item.thumbnail}

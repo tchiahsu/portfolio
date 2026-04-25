@@ -8,7 +8,7 @@ import Footer from "../components/Footer"
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-5 w-7xl justify-center sm:px-20">
+    <div className="flex flex-col gap-5 w-full max-w-7xl justify-center px-6 sm:px-20">
       <Introduction />
       <About />
       <Work />
