@@ -5,8 +5,6 @@ import { MdWork } from "react-icons/md";
 import { RiFilePaper2Fill } from "react-icons/ri";
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
 
-
-
 const CHARS = "XXXXXXXXXABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
 function useScramble(text: string, delay: number = 0, fixedWidth?: number) {
@@ -75,9 +73,10 @@ function useScramble(text: string, delay: number = 0, fixedWidth?: number) {
   return display;
 }
 
-function BentoItem({ icon, text, delay, width, accent }: { icon: React.ReactNode; text: string; delay?: number; width?: number; accent?: boolean }) {
+function BentoItem({ icon, text, delay, width, accent }: {
+  icon: React.ReactNode; text: string; delay?: number; width?: number; accent?: boolean
+}) {
   const scrambled = useScramble(text, delay ?? 300, width);
-
   return (
     <div className="flex items-center gap-3">
       <span className={accent ? "text-[#007bff]/70" : "text-gray-300"}>{icon}</span>
@@ -93,8 +92,8 @@ function BentoItem({ icon, text, delay, width, accent }: { icon: React.ReactNode
 
 export default function HeroCard() {
   return (
-    <div className="relative rounded-3xl shadow-lg border-t border-gray-500/10 bg-white/60 backdrop-blur-md px-12 py-10 flex justify-between items-center w-2/3 max-w-3xl overflow-hidden">
-      
+    <div className="relative rounded-3xl shadow-lg border-t border-gray-500/10 bg-white/60 backdrop-blur-md px-6 md:px-12 py-8 md:py-10 flex flex-col-reverse md:flex-row justify-between items-center w-[90vw] lg:w-2/3 max-w-3xl overflow-hidden gap-6 lg:gap-0">
+
       {/* Grid overlay */}
       <div
         className="absolute inset-0 z-0 pointer-events-none"
@@ -110,11 +109,9 @@ export default function HeroCard() {
       />
 
       {/* Left: text */}
-      <div className="relative z-10 flex flex-col gap-4">
-        <h1 className="font-serif text-6xl font-normal">Tony Hsu Tai</h1>
-
-        {/* Bento items */}
-        <div className="pl-2 pt-2 flex flex-col gap-2">
+      <div className="relative z-10 flex flex-col gap-4 items-center sm:items-start text-center sm:text-left">
+        <h1 className="font-serif text-4xl sm:text-6xl font-normal">Tony Hsu Tai</h1>
+        <div className="pl-0 sm:pl-2 pt-2 flex flex-col gap-2">
           <BentoItem icon={<MdWork size={16} />} text="Software Developer Intern" delay={800} width={30} />
           <BentoItem icon={<IoCheckmarkDoneSharp size={16} />} text="Sentinel Group" delay={800} width={30} accent />
           <BentoItem icon={<FaMapPin size={16} />} text="Boston, MA" delay={800} width={30} />
@@ -124,8 +121,8 @@ export default function HeroCard() {
       </div>
 
       {/* Right: avatar */}
-      <div className="relative z-10 rounded-full p-2 bg-linear-to-br from-[rgba(245,179,112,0.2)] via-white/20 to-[rgba(139,220,228,0.2)] shrink-0 ml-8 shadow-sm">
-        <div className="rounded-full overflow-hidden w-48 h-48">
+      <div className="relative z-10 rounded-full p-2 bg-linear-to-br from-[rgba(245,179,112,0.2)] via-white/20 to-[rgba(139,220,228,0.2)] shrink-0 sm:ml-8 shadow-sm">
+        <div className="rounded-full overflow-hidden w-32 h-32 sm:w-48 sm:h-48">
           <img src={profilePic} alt="Profile" className="w-full h-full object-cover" />
         </div>
       </div>
