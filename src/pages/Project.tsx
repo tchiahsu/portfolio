@@ -4,7 +4,7 @@ import { projectData } from "../data/project"
 
 export default function Project() {
   return (
-    <div id="projects" className="mb-24 pt-10">
+    <div id="projects" className="mb-12 pt-10">
       <div className="flex flex-col gap-10 justify-center items-center">
         <Title title="Selected Projects" />
         <div className="font-bold font-serif text-3xl">Check Out My Latest Work</div>

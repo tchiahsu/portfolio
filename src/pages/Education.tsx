@@ -4,7 +4,7 @@ import { educationData } from "../data/education"
 
 export default function Educations() {
   return (
-    <div id="more">
+    <div id="more" className="pt-10">
       <Title title="Education" />
       {educationData.map((item) => (
         <Education 

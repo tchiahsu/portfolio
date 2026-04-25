@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-// import Left from "../components/Left";
 
 type RootLayoutProps = {
     children: React.ReactNode;
@@ -7,7 +6,7 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
 	return (
-		<div className="min-h-screen flex flex-col">
+		<div className="min-h-screen flex flex-col overflow-x-hidden">
 			{/* Portfolio Header */}
 			<Header />
 
