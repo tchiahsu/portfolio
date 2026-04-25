@@ -92,7 +92,7 @@ function BentoItem({ icon, text, delay, width, accent }: {
 
 export default function HeroCard() {
   return (
-    <div className="relative rounded-3xl shadow-lg border-t border-gray-500/10 bg-white/60 backdrop-blur-md px-6 md:px-12 py-8 md:py-10 flex flex-col-reverse md:flex-row justify-between items-center w-[90vw] lg:w-2/3 max-w-3xl overflow-hidden gap-6 lg:gap-0">
+    <div className="relative rounded-3xl shadow-lg border-t border-gray-500/10 bg-white/60 backdrop-blur-md px-6 md:px-12 py-8 md:py-10 flex flex-col-reverse md:flex-row justify-between items-center w-[90vw] xl:w-2/3 max-w-3xl overflow-hidden gap-6 lg:gap-0">
 
       {/* Grid overlay */}
       <div
@@ -112,11 +112,11 @@ export default function HeroCard() {
       <div className="relative z-10 flex flex-col gap-4 items-center sm:items-start text-center sm:text-left">
         <h1 className="font-serif text-4xl sm:text-6xl font-normal">Tony Hsu Tai</h1>
         <div className="pl-0 sm:pl-2 pt-2 flex flex-col gap-2">
-          <BentoItem icon={<MdWork size={16} />} text="Software Developer Intern" delay={800} width={30} />
-          <BentoItem icon={<IoCheckmarkDoneSharp size={16} />} text="Sentinel Group" delay={800} width={30} accent />
-          <BentoItem icon={<FaMapPin size={16} />} text="Boston, MA" delay={800} width={30} />
-          <BentoItem icon={<FaGraduationCap size={16} />} text="M.S. in Computer Science" delay={900} width={30} accent />
-          <BentoItem icon={<RiFilePaper2Fill size={16} />} text="Northeastern University" delay={1000} width={30} />
+          <BentoItem icon={<MdWork size={16} />} text="Software Developer Intern" delay={800} width={25} />
+          <BentoItem icon={<IoCheckmarkDoneSharp size={16} />} text="Sentinel Group" delay={800} width={25} accent />
+          <BentoItem icon={<FaMapPin size={16} />} text="Boston, MA" delay={800} width={25} />
+          <BentoItem icon={<FaGraduationCap size={16} />} text="M.S. in Computer Science" delay={900} width={25} accent />
+          <BentoItem icon={<RiFilePaper2Fill size={16} />} text="Northeastern University" delay={1000} width={25} />
         </div>
       </div>
 
