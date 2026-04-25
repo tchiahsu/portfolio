@@ -1,19 +1,21 @@
 import Introduction from "./Introduction"
 import About from "./About"
+import Journey from "./Journey"
 import Work from "./Work"
+import Education from "./Education"
 import Project from "./Project"
 import Footer from "../components/Footer"
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-5 px-5 md:px-10 lg:px-30 max-w-480 mx-auto">
+    <div className="flex flex-col gap-5 w-7xl justify-center sm:px-20">
       <Introduction />
-      <Project />
-      <Work />
       <About />
+      <Work />
+      <Project />
+      <Education />
+      <Journey />
       <Footer />
     </div>
   )
 }
-
-// flex flex-col items-center gap-5 px-5 md:px-10 lg:px-24 max-w-5xl mx-auto

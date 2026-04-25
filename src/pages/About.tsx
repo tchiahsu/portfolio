@@ -1,79 +1,24 @@
-import { skills } from "../data/about";
-import pfp from "../assets/projects/pfp.png";
-import SkillsCard from "../components/ui/SkillsCard";
+import Title from "../components/ui/Title"
 
 export default function About() {
   return (
-    <div id="about" className="scroll-mt-24 flex flex-col gap-10 my-10 sm:my-20 sm:px-20">
-      {/* Section Title */}
-      <div className="flex justify-start mt-4 text-4xl md:text-5xl tracking-tight gap-2">
-        <span className="text-slate-600 font-semibold">ABOUT ME</span>
-        <span className="text-[#007bff] font-bold">.</span>
-      </div>
-
-      {/* Section Content */}
-      <div className="mx-auto max-w-480 flex flex-col md:flex-row gap-12 items-center">
-        {/* About me */}
-        <div>
-          {/* Accent line */}
-          <div className="mb-8 h-0.5 w-55 bg-[#007bff]" />
-
-          {/* Subtitle + Image row */}
-          <div className="flex flex-row gap-2 items-center sm:gap-6">
-            {/* Image */}
-            <img
-              src={pfp}
-              alt="Profile photo"
-              className="
-                mt-4 sm:mt-0
-                w-32
-                sm:w-36
-                md:w-40
-                h-auto
-                rounded-2xl
-                object-cover
-                shrink-0
-              "
-            />
-            {/* Subtitle */}
-            <p className="text-lg font-semibold text-slate-400 max-w-lg">
-              I'm interested in solving real-world problems using clean and usable software.
-            </p>
-          </div>
-
-          {/* Body */}
-          <div className="mt-6 space-y-4 text-sm leading-6 text-zinc-600">
-            <p>
-              I studied Industrial Engineering for my undergraduate degree and spent nearly three years working as an operations 
-              manager at Boston Microgreens, where spreadsheets were the backbone of day-to-day operations. While building and 
-              maintaining those systems, I began to see both their strengths and limitations, but particularly how much more 
-              effective the business could be with purpose-built software. That experience fundamentally reshaped how I thought 
-              about operations and ultimately pushed me to transition into computer science.
-            </p>
-
-            <p>
-              I'm now pursuing a Master's degree in Computer Science, where I attempt to use software development to high-impact 
-              solutions to real-world problems. Recently, I applied that mindset by building a web application to manager order 
-              and planting data for my former company, enabling them to move away from spreadsheets towards a more robust 
-              automated system.
-            </p>
-
-            <p>
-              I've also started exploring AI and machine learning. I built a competitor-analysis tool using 
-              DigitalOcean's Gradient AI with multiple agentic workflows to analyze market strategy and pricing. 
-              Currently, I'm working on a financial insights application that uses Gemini AI to generate deeper 
-              insights from personal financial data.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Skills */}
-      <div className="flex flex-col gap-4 justify-center">
-        {skills.map((s) => (
-          <SkillsCard title={s.title} skills={s.skills}/>
-        ))}
-      </div>
+    <div id="about" className="pt-10">
+      {/* About Me */}
+      <Title title="About" />
+      <span className="flex flex-col gap-5 mb-8 text-gray-600 font-inter mt-10">
+        <span>Hello, I'm Tony 👋🏼</span>
+        <span>
+          I got my B.S. degree in Industrial Engineering and spent nearly three years as an operations manager 
+          at <a href="https://www.microgreens.boston/" className="cursor-pointer font-bold underline">Boston Microgreens</a> 🌱,
+          where working closely with spreadsheet-based systems showed me both their value and limitations, ultimately leading me to transition
+          into computer science. I'm now pursuing a Master's in Computer Science
+          at <a href="https://www.khoury.northeastern.edu/programs/align-masters-of-science-in-computer-science/" className="cursor-pointer font-bold underline">Northeastern University</a> 🎓, focused on building practical,
+          high-impact solutions, including a web app that helped my former company move from spreadsheets to a more automated system.
+        </span>
+        <span>
+          <span className="font-bold">🔬 Interests:</span> Agent-based Workflows, AI/ML, and Computer Vision.
+        </span>
+      </span>
     </div>
   )
 }
