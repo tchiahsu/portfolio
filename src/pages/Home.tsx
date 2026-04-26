@@ -3,7 +3,9 @@ import About from "./About"
 import Journey from "./Journey"
 import Work from "./Work"
 import Education from "./Education"
+import Skills from "./Skills"
 import Project from "./Project"
+import Fun from "./Fun"
 import Footer from "../components/Footer"
 
 export default function Home() {
@@ -14,7 +16,9 @@ export default function Home() {
       <Work />
       <Project />
       <Education />
+      <Skills />
       <Journey />
+      <Fun />
       <Footer />
     </div>
   )

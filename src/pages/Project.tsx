@@ -14,7 +14,7 @@ export default function Project() {
     <div id="projects" className="mb-12 pt-10">
       <div className="flex flex-col gap-10 justify-center items-center">
         <Title title="Selected Projects" />
-        <div className="font-bold font-serif text-3xl">Check Out My Latest Work</div>
+        <div className="font-serif text-4xl">Check Out My Latest Work</div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
           {visible.map((item, i) => (
             <Projects
