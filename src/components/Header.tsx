@@ -52,7 +52,7 @@ export default function Sidebar() {
           href={resume}
           target="_blank"
           title="Download Resume"
-          className="flex flex-col items-center gap-1 cursor-pointer text-[#007BFF] hover:scale-110 transition-all duration-200 active:scale-100"
+          className="flex flex-col items-center gap-1 cursor-pointer text-gray-600 hover:scale-110 transition-all duration-200 active:scale-100"
         >
           <IoDownload size={20} />
           <span className="font-mono text-[9px]">Resume</span>
