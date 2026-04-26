@@ -19,13 +19,4 @@ export const educationData = [
     start: "Sep 2016",
     finish: "May 2021",
   },
-  {
-    logo: neu,
-    university: "Northeastern University",
-    degree: "B.S. in Industrial Engineering & M.S. in Engineering Management",
-    program: "Accelerated BS/MS Program",
-    gpa: "3.75/4.00",
-    start: "Sep 2016",
-    finish: "May 2021",
-  },
 ]
