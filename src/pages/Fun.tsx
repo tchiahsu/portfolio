@@ -7,7 +7,7 @@ import { FaHandPeace } from "react-icons/fa6";
 
 
 const travel = [
-  { name: "Uruguay",   detail: "Montevideo",                             color: "bg-blue-50 border-blue-400 text-blue-700"},
+  { name: "Uruguay",   detail: "HOME",                             color: "bg-blue-50 border-blue-400 text-blue-700"},
   { name: "Argentina", detail: "Buenos Aires, Ushuaia",                  color: "bg-sky-50 border-sky-400 text-sky-700"},
   { name: "Brazil",    detail: "Curitiba, Chuy",                         color: "bg-green-50 border-green-500 text-green-700"},
   { name: "Ecuador",   detail: "Quito",                                  color: "bg-yellow-50 border-yellow-400 text-yellow-700"},
