@@ -6,7 +6,7 @@ export const educationData = [
     university: "Northeastern University",
     degree: "M.S. in Computer Science",
     program: "Align Program",
-    gpa: "4.00/4.00",
+    gpa: "3.97/4.00",
     start: "Sep 2024",
     finish: "Dec 2026",
   },

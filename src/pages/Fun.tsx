@@ -23,13 +23,13 @@ const travel = [
 ];
 
 const facts = [
-  { category: "Location", text: "10+ years in Boston, but my home is still Uruguay." },
+  { category: "Location", text: "10+ years in Boston, but Uruguay is still home." },
   { category: "Hobbies", text: "Trying new restaurants, always looking for new suggestions." },
   { category: "Languages", text: "Speak English, Spanish, and Mandarin...what's next?" },
   { category: "Weather", text: "Love rainy days, something about it feels calm and focused." },
   { category: "Sports",  text: "Big soccer fan, will watch almost any sport, still figuring out hockey." },
   { category: "Games",  text: "Play games occasionally, mainly Valorant." },
-  { category: "Travel",  text: "Next destination is Zhangjiajie, China. The Avatar movie was filmed there!." },
+  { category: "Travel",  text: "Next destination is Zhangjiajie, China. The Avatar movie was filmed there!" },
   { category: "Unexpected",  text: "Never watched The Office, Friends, or How I Met Your Mother." },
 ];
 
