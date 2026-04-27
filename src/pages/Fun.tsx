@@ -23,13 +23,13 @@ const travel = [
 ];
 
 const facts = [
-  { category: "Location", text: "10+ years in Boston, still exploring the city like it's new." },
-  { category: "Hobbies", text: "Always trying new restaurants, it my favorite way to explore the city." },
-  { category: "Languages", text: "Speak English, Spanish, and Mandarin. Grew up around multiple cultures and persepctives." },
+  { category: "Location", text: "10+ years in Boston, but my home is still Uruguay." },
+  { category: "Hobbies", text: "Trying new restaurants, always looking for new suggestions." },
+  { category: "Languages", text: "Speak English, Spanish, and Mandarin...what's next?" },
   { category: "Weather", text: "Love rainy days, something about it feels calm and focused." },
   { category: "Sports",  text: "Big soccer fan, will watch almost any sport, still figuring out hockey." },
   { category: "Games",  text: "Play games occasionally, mainly Valorant." },
-  { category: "Travel",  text: "Next destination is Zhangjiajie, China. The landsacpes and national park have always stood out to me." },
+  { category: "Travel",  text: "Next destination is Zhangjiajie, China. The Avatar movie was filmed there!." },
   { category: "Unexpected",  text: "Never watched The Office, Friends, or How I Met Your Mother." },
 ];
 
@@ -198,9 +198,9 @@ function ConnectWithMe() {
       </div>
 
       {/* Footer */}
-      <div className="flex flex-col items-center gap-0.5 text-[9pt] text-gray-400 font-mono mt-5">
-        <span>Last updated: 2026.04</span>
-        <span>Thanks to <span className="text-gray-600">Zangwei Zheng</span> for the design idea.</span>
+      <div className="flex flex-col items-center justify-center text-center gap-2 text-[9pt] text-gray-400 font-mono mt-5">
+        <span>Last updated: April 2026</span>
+        <span>Thanks to <span className="text-gray-600">Zangwei Zheng</span> for the design inspiration.</span>
       </div>
     </div>
   );
