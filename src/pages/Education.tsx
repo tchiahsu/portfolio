@@ -11,7 +11,7 @@ export default function Educations() {
   const visible = showAll ? educationData : educationData.slice(0, LIMIT);
 
   return (
-    <div id="more" className="pt-10">
+    <div className="pt-10">
       <Title title="Education" />
       {visible.map((item, i) => (
         <Education

@@ -4,8 +4,6 @@ import { MdOutlineTravelExplore } from "react-icons/md";
 import { FaQuoteLeft, FaUserFriends } from "react-icons/fa";
 import { FaHandPeace } from "react-icons/fa6";
 
-
-
 const travel = [
   { name: "Uruguay",   detail: "HOME",                             color: "bg-blue-50 border-blue-400 text-blue-700"},
   { name: "Argentina", detail: "Buenos Aires, Ushuaia",                  color: "bg-sky-50 border-sky-400 text-sky-700"},
@@ -208,7 +206,7 @@ function ConnectWithMe() {
 
 export default function TravelLineage() {
   return (
-    <div className="flex flex-col justify-center items-center gap-7 w-full mb-20">
+    <div id="more" className="flex flex-col justify-center items-center gap-7 w-full mb-20 pt-10">
       <Title title="Interesting Facts" />
       <div className="font-serif text-3xl">Get to Know Me More!</div>
       <TravelCard />
