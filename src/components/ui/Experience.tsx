@@ -41,7 +41,7 @@ export default function Experience({ logo, title, company, summary, location, st
               {/* Row 1: Title + Date + Chevron */}
               <div className="flex flex-row items-start justify-between gap-2">
                 <div className="flex flex-col gap-0.5 min-w-0">
-                  <div className="text-base sm:text-xl text-slate-900 tracking-wide font-serif break-words">{title}</div>
+                  <div className="text-base sm:text-xl text-slate-900 tracking-wide font-serif wrap-break-words">{title}</div>
                   <div className="text-[10px] sm:text-xs tracking-widest text-gray-400 uppercase md:hidden">{start} – {finish}</div>
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
