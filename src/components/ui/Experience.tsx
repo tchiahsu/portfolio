@@ -39,9 +39,9 @@ export default function Experience({ logo, title, company, summary, location, st
             <div className="flex flex-col gap-1 min-w-0 flex-1">
 
               {/* Row 1: Title + Date + Chevron */}
-              <div className="flex flex-row items-center justify-between gap-2">
+              <div className="flex flex-row items-start justify-between gap-2">
                 <div className="flex flex-col gap-0.5 min-w-0">
-                  <div className="text-base sm:text-xl text-slate-900 tracking-wide font-serif truncate">{title}</div>
+                  <div className="text-base sm:text-xl text-slate-900 tracking-wide font-serif break-words">{title}</div>
                   <div className="text-[10px] sm:text-xs tracking-widest text-gray-400 uppercase md:hidden">{start} – {finish}</div>
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
@@ -66,7 +66,7 @@ export default function Experience({ logo, title, company, summary, location, st
         {/* Dropdown */}
         <div className={clsx(
           "overflow-hidden transition-all duration-300 px-4 sm:px-6",
-          open ? "max-h-96 opacity-100 pb-6" : "max-h-0 opacity-0"
+          open ? "max-h-500 opacity-100 pb-6" : "max-h-0 opacity-0"
         )}>
           <div className="text-sm font-semibold text-[#007bff] mb-4 mt-4">Responsibilities</div>
           <ul className="list-disc pl-5 space-y-2 text-sm text-slate-600">
