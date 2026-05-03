@@ -4,6 +4,8 @@ import { MdOutlineTravelExplore } from "react-icons/md";
 import { FaQuoteLeft, FaUserFriends } from "react-icons/fa";
 import { FaHandPeace } from "react-icons/fa6";
 
+const quote = `In the depths of winter, I finally learned that within me there lay an invincible summer. - Albert Camus`;
+
 const travel = [
   { name: "Uruguay",   detail: "HOME",                             color: "bg-blue-50 border-blue-400 text-blue-700"},
   { name: "Argentina", detail: "Buenos Aires, Ushuaia",                  color: "bg-sky-50 border-sky-400 text-sky-700"},
@@ -210,7 +212,7 @@ export default function TravelLineage() {
       <Title title="Interesting Facts" />
       <div className="font-serif text-3xl">Get to Know Me More!</div>
       <TravelCard />
-      <QuoteCard quote="Opportunities are like trains—there's always another one coming, but if you don't have the fare, you'll never get on." />
+      <QuoteCard quote={quote} />
       <MoreAboutMe />
       <ConnectWithMe />
     </div>
