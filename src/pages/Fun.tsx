@@ -4,7 +4,8 @@ import { MdOutlineTravelExplore } from "react-icons/md";
 import { FaQuoteLeft, FaUserFriends } from "react-icons/fa";
 import { FaHandPeace } from "react-icons/fa6";
 
-const quote = `In the depths of winter, I finally learned that within me there lay an invincible summer. - Albert Camus`;
+const quote = `In the depths of winter, I finally learned that within me there lay an invincible summer.`;
+const quoteAuthor = `Albert Camus`;
 
 const travel = [
   { name: "Uruguay",   detail: "HOME",                             color: "bg-blue-50 border-blue-400 text-blue-700"},
@@ -100,10 +101,10 @@ function TravelCard() {
   );
 }
 
-function QuoteCard({ quote }: { quote: string }) {
+function QuoteCard({ quote, author }: { quote: string; author?: string }) {
   return (
     <div className="relative flex flex-col gap-3 rounded-3xl shadow-sm border-t border-gray-500/10 bg-white/60 backdrop-blur-md px-4 md:px-10 py-6 md:py-8 w-4/5"
-          style={{
+      style={{
         backgroundImage: `
           linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
           linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px)
@@ -117,10 +118,13 @@ function QuoteCard({ quote }: { quote: string }) {
         </span>
         <span className="font-serif uppercase tracking-widest text-[10pt]">Favorite Quote</span>
       </div>
-      <div className="relative px-6 py-2">
+      <div className="relative px-6 py-2 flex flex-col items-center gap-3">
         <p className="text-sm md:text-base text-center tracking-wide text-gray-400 italic font-serif leading-relaxed px-4">
           {quote}
         </p>
+        {author && (
+          <span className="text-sm italic font-serif tracking-widest text-gray-400">— {author}</span>
+        )}
       </div>
     </div>
   );
@@ -212,7 +216,7 @@ export default function TravelLineage() {
       <Title title="Interesting Facts" />
       <div className="font-serif text-3xl">Get to Know Me More!</div>
       <TravelCard />
-      <QuoteCard quote={quote} />
+      <QuoteCard quote={quote} author={quoteAuthor} />
       <MoreAboutMe />
       <ConnectWithMe />
     </div>
