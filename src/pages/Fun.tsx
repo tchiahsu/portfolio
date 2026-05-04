@@ -9,7 +9,7 @@ const quoteAuthor = `Albert Camus`;
 
 const travel = [
   { name: "Uruguay",   detail: "HOME",                             color: "bg-blue-50 border-blue-400 text-blue-700"},
-  { name: "Argentina", detail: "Buenos Aires, Ushuaia",                  color: "bg-sky-50 border-sky-400 text-sky-700"},
+  { name: "Argentina", detail: "Buenos Aires, Ushuaia, Calafate",                  color: "bg-sky-50 border-sky-400 text-sky-700"},
   { name: "Brazil",    detail: "Curitiba, Chuy",                         color: "bg-green-50 border-green-500 text-green-700"},
   { name: "Ecuador",   detail: "Quito",                                  color: "bg-yellow-50 border-yellow-400 text-yellow-700"},
   { name: "Peru",      detail: "Lima",                                   color: "bg-red-50 border-red-400 text-red-700"},
@@ -18,7 +18,7 @@ const travel = [
   { name: "USA",       detail: "MA, FL, NH, ME, WA, CA, NY",            color: "bg-blue-50 border-blue-600 text-blue-800"},
   { name: "China",     detail: "Shanghai, Beijing, Hong Kong, Nanjing",  color: "bg-red-50 border-red-600 text-red-800"},
   { name: "Spain",     detail: "Barcelona",                              color: "bg-yellow-50 border-yellow-500 text-yellow-800"},
-  { name: "Italy",     detail: "Rome",                                   color: "bg-green-50 border-green-500 text-green-700"},
+  { name: "Italy",     detail: "Rome, Sicily",                                   color: "bg-green-50 border-green-500 text-green-700"},
   { name: "France",    detail: "Marseille",                              color: "bg-blue-50 border-blue-500 text-blue-800"},
   { name: "Tunisia",   detail: "Tunis",                                  color: "bg-red-50 border-red-400 text-red-700"},
 ];
