@@ -76,7 +76,7 @@ function TravelCard() {
       </div>
 
       <span className="text-sm tracking-wide text-gray-500">
-        I've explored over <span className="font-bold">13+ different parts of the world</span> over the years,
+        I've explored <span className="font-bold">13+ different parts of the world</span> over the years,
         experiencing new places, cultures, and perspectives along the way.
       </span>
 
