@@ -4,7 +4,6 @@ export const skills = [
     skills: [
       "TypeScript",
       "Python",
-      "Go",
       "Java",
       "C/C++"
     ]
@@ -15,6 +14,7 @@ export const skills = [
       "React",
       "Tailwind CSS",
       "Node.js",
+      "NestJS",
       "Express.js",
       "FastAPI",
       "REST APIs",
@@ -27,9 +27,8 @@ export const skills = [
     skills: [
       "PostgreSQL",
       "MySQL",
-      "MongoDB",
       "AWS",
-      "Terraform"
+      "Docker",
     ]
   }
 ]

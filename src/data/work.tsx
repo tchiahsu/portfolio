@@ -12,9 +12,9 @@ export const workData = [
     start: "May 2026",
     finish: "Aug 2026",
     description: [
-      "Migrate and optimize automated workflows using Apache Airflow (Python)",
-      "Develop and enhance application features using TypeScript in existing systems",
-      "Collaborate with engineers to build and improve scalable, production-ready software systems",
+      "Set up a complete local development stack and contributed documentation improvements through pull requests to streamline onboarding and simplify developer setup.",
+      "Enhanced a shared performance logging decorator by adding optional log-level configuration, reducing production log noise while improving observability flexibility across services.",
+      "Implemented an interactive filtering feature using Radix UI components to improve usability and streamline navigation within a service dashboard.",
     ]
   },
   {
