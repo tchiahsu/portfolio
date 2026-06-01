@@ -12,9 +12,9 @@ export const workData = [
     start: "May 2026",
     finish: "Aug 2026",
     description: [
-      "Set up a complete local development stack and contributed documentation improvements through pull requests to streamline onboarding and simplify developer setup.",
-      "Enhanced a shared performance logging decorator by adding optional log-level configuration, reducing production log noise while improving observability flexibility across services.",
-      "Implemented an interactive filtering feature using Radix UI components to improve usability and streamline navigation within a service dashboard.",
+      "Improved application telemetry by updating backend logging to use configurable log levels, moving desired performance logs from info to debug level so production-critical logs were easier to identify in Datadog.",
+      "Built a filtering feature for the internal application control center using Radix UI components, improving navigation and making application data easier for internal teams to search and manage.",
+      "Contributed to migration efforts from LocalStack to Floci by configuring local AWS service emulation for SQS, SNS, and S3, improving reliability and simplifying multi-service local development workflows.",
     ]
   },
   {
