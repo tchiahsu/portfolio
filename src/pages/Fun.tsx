@@ -4,8 +4,8 @@ import { MdOutlineTravelExplore } from "react-icons/md";
 import { FaQuoteLeft, FaUserFriends } from "react-icons/fa";
 import { FaHandPeace } from "react-icons/fa6";
 
-const quote = `In the depths of winter, I finally learned that within me there lay an invincible summer.`;
-const quoteAuthor = `Albert Camus`;
+const quote = `In the darkness, the strongest soul's don't search for the light, they become it.`;
+const quoteAuthor = `Olivia Ann Rose`;
 
 const travel = [
   { name: "Uruguay",   detail: "Home 🏠", color: "bg-blue-50 border-blue-400 text-blue-700"},
