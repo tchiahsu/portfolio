@@ -28,7 +28,7 @@ export default function Journey() {
         <div className="flex justify-center uppercase tracking-widest text-[8pt] mt-4">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="flex items-center gap-2 border uppercase border-gray-500/20 rounded-full px-4 py-2 hover:border-[#007BFF] hover:text-[#007BFF] transition-colors duration-200"
+            className="flex items-center gap-2 border uppercase border-gray-500/20 rounded-full px-4 py-2 hover:border-[#007BFF] hover:text-[#007BFF] transition-colors duration-200 cursor-pointer"
           >
             {showAll ? (
               <><FaAngleUp size={12} /> see less</>
