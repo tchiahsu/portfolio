@@ -121,7 +121,7 @@ export default function HeroCard() {
       </div>
 
       {/* Right: avatar */}
-      <div className="relative z-10 rounded-full p-2 bg-linear-to-br from-[rgba(147,197,253,0.2)] via-white/20 to-[rgba(99,179,237,0.2)] shrink-0 sm:ml-8 shadow-sm">
+      <div className="relative z-10 rounded-full p-2 bg-linear-to-br from-[rgba(245,179,112,0.2)] via-white/20 to-[rgba(139,220,228,0.2)] shrink-0 sm:ml-8 shadow-sm">
         <div className="rounded-full overflow-hidden w-32 h-32 sm:w-48 sm:h-48">
           <img src={profilePic} alt="Profile" className="w-full h-full object-cover" />
         </div>
