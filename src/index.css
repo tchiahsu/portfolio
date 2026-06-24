@@ -10,15 +10,15 @@ html {
 }
 
 body {
-  background-color: rgb(244, 248, 252);
+  background-color: rgb(248, 246, 242);
   background-attachment: fixed;
   background-image:
     linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px),
-    radial-gradient(circle at 0% 0%, rgba(99, 179, 237, 0.32), rgba(0,0,0,0) 26%),
-    radial-gradient(circle at 82% 12%, rgba(147, 197, 253, 0.28), rgba(0,0,0,0) 20%),
-    radial-gradient(circle at 50% 110%, rgba(165, 213, 255, 0.22), rgba(0,0,0,0) 24%),
-    linear-gradient(rgb(246, 250, 254), rgb(244, 248, 252));
+    radial-gradient(circle at 0% 0%, rgba(139, 220, 228, 0.3), rgba(0,0,0,0) 26%),
+    radial-gradient(circle at 82% 12%, rgba(245, 179, 112, 0.28), rgba(0,0,0,0) 20%),
+    radial-gradient(circle at 50% 110%, rgba(159, 209, 189, 0.25), rgba(0,0,0,0) 24%),
+    linear-gradient(rgb(250, 248, 245), rgb(248, 246, 242));
   background-size:
     80px 80px,
     80px 80px,
