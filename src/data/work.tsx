@@ -12,9 +12,11 @@ export const workData = [
     start: "May 2026",
     finish: "Aug 2026",
     description: [
-      "Improved application telemetry by updating backend logging to use configurable log levels, moving desired performance logs from info to debug level so production-critical logs were easier to identify in Datadog.",
-      "Built a filtering feature for the internal application control center using Radix UI components, improving navigation and making application data easier for internal teams to search and manage.",
-      "Contributed to migration efforts from LocalStack to Floci by configuring local AWS service emulation for SQS, SNS, and S3, improving reliability and simplifying multi-service local development workflows.",
+      "Added chart support to the document generation API, implementing server-side rendering via Chart.js and Puppeteer. Existing templates saw no added overhead while chart-enabled PDFs rendered within 2x the baseline, an expected tradeoff for headless browser rendering.",
+      "Made log level runtime-configurable via a LOG_LEVEL env variable across the shared utility library and downstream services where verbosity was previously hard-coded, demoting high-volume performance logs from info to debug. Reducing log volume by 40% and making critical events easier to identify in Datadog.",
+      "Added search and filtering to the internal control center where teams previously had to manually scroll through 20+ applications, building the feature using Radix UI components integrated into the existing design system.",
+      "Rebuilt the local development stack where manual setup made onboarding inconsistent and error-prone, creating a single init script for Docker orchestration, environment config, and app seeding and configuring local AWS emulation for SQS, SNS, and S3, cutting environment setup time to under 5 minutes.",
+      "Upgraded control center and document management app to the latest custom utility package, where both services were running stale builds and not reflecting merged upstream changes and resolving all breaking changes to bring both services into alignment.",
     ]
   },
   {
