@@ -11,6 +11,8 @@ import goatThumbnail from "../assets/projects/goat_thumbnail.png";
 import goatImage from "../assets/projects/goat_app.png";
 import clioThumbnail from "../assets/projects/clio_thumbnail.png";
 import clioImage from "../assets/projects/clio_app.png";
+import clashThumbnail from "../assets/projects/clash_thumbnail.png";
+import clashImage from "../assets/projects/clash_app.png";
 
 // Import Videos for Portfolio
 import plDemo from "../assets/demo/product_lens_demo.mp4";
@@ -19,6 +21,7 @@ import pokeDemo from "../assets/demo/poke_demo.mp4";
 import spotifyDemo from "../assets/demo/spotify_demo.mp4";
 import goatDemo from "../assets/demo/goat_demo.mp4";
 import clioDemo from "../assets/demo/clio_demo.mp4";
+import clashDemo from "../assets/demo/clash_demo.mp4";
 
 export const projectData = [
   {
@@ -53,6 +56,17 @@ export const projectData = [
     hackathon: "",
     winner: "",
     demo: pokeDemo
+  },
+  {
+    thumbnail: clashThumbnail,
+    preview: clashImage,
+    title: "Clash Royale Deck Builder",
+    description: "A deck recommendation tool for Clash Royale players who want to build around specific cards. Tell it which cards you absolutely want in your deck, which ones you want to avoid, and your current arena levels, and it surfaces the top 3 highest win-rate decks that match your constraints.",
+    github: "https://github.com/tchiahsu/clash-royale-deck-builder",
+    website: "https://clash-royale-deck-builder.onrender.com/",
+    hackathon: "",
+    winner: "",
+    demo: clashDemo
   },
   {
     thumbnail: spotifyThumbnail,
