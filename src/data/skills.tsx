@@ -1,6 +1,6 @@
 export const skills = [
   {
-    title: "Programming Languages",
+    title: "Languages",
     skills: [
       "TypeScript",
       "Python",
@@ -9,26 +9,31 @@ export const skills = [
     ]
   },
   {
-    title: "Frameworks & Systems",
+    title: "Frameworks & Libraries",
     skills: [
       "React",
-      "Tailwind CSS",
       "Node.js",
       "NestJS",
       "Express.js",
       "FastAPI",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    title: "Protocols & Standards",
+    skills: [
       "REST APIs",
-      "JWT",
       "OAuth 2.0"
     ]
   },
   {
-    title: "Data & Infrastructure",
+    title: "Databases & Infrastructure",
     skills: [
       "PostgreSQL",
       "MySQL",
       "AWS",
       "Docker",
+      "Datadog"
     ]
   }
 ]
